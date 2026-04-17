@@ -46,6 +46,10 @@ jobs:
       - name: Format check
         run: pnpm lint:format:src && pnpm lint:format:css
 
+      # .astro/ is gitignored; type-aware ESLint needs astro:content types before lint.
+      - name: Astro sync
+        run: pnpm exec astro sync
+
       - name: Lint code
         run: pnpm lint:code:src
 
