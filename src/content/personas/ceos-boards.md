@@ -74,8 +74,8 @@ engagementTiers:
 credibility:
   heading: 'We have been in these rooms.'
   paragraphs:
-    - 'We have presented AI strategy to skeptical boards and delivered it alongside engineering teams. We understand what boards need to see because we have sat on both sides of that conversation: the executive presenting, and the advisor helping them prepare. That perspective is what makes the advice usable, not just correct.'
-    - 'We have worked across startups, scale-ups, and Fortune 50 companies. The patterns that separate successful AI investments from expensive experiments are consistent across all of them.'
+    - "We have presented AI strategy to skeptical boards and sat on the other side of the table when the questions got pointed. We have spent nearly two decades inside a Fortune 100 enterprise software company's global sales organization, helped a national retailer cut $2.5M per month in operating costs, and built the internal case for why the cuts were sustainable. We have navigated PE exits, prepared organizations for acquisition, and been the people a board called when the technology leader and the revenue leader were not speaking the same language."
+    - 'If you are trying to figure out whether your technology investment is actually moving revenue, or whether your revenue motion is asking engineering for things engineering cannot deliver, that is a question we have answered before.'
 
 faq:
   - question: 'What should an AI strategy for a mid-market company include?'
