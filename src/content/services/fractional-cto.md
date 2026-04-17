@@ -11,13 +11,13 @@ ctaLink: '/contact'
 
 You need a senior leader who can own both product strategy and technology execution, but the timing, budget, or stage does not justify full-time executive hires. Meanwhile, your engineers need strategic direction, your board needs confidence in both what you are building and how, and nobody is connecting product decisions to technology reality.
 
-Advisors write recommendations. We work as your CTO/CPTO (Chief Product and Technology Officer) — making decisions, building team capability, connecting product and technology choices to business outcomes, and staying accountable for execution. One leader across product and engineering, rather than two roles that need constant coordination.
+Advisors write recommendations. We work as your CTO/CPTO (Chief Product and Technology Officer): making decisions, building team capability, connecting product and technology choices to business outcomes, and staying accountable for execution. One leader across product and engineering, rather than two roles that need constant coordination.
 
 ## What you get
 
 Embedded product and technology leadership that functions as part of your team:
 
-We lead with strategy and stay accountable through execution. When more engineering capacity is needed, we bring in people we know and trust — and stay responsible for what they deliver.
+We lead with strategy and stay accountable through execution. When more engineering capacity is needed, we bring in people we know and trust. We stay responsible for what they deliver.
 
 - **Product strategy and roadmap ownership** — Feature prioritization, product-market fit validation, roadmap decisions grounded in both customer needs and technical reality
 - **Technology strategy and architecture** — Architecture decisions, build-vs-buy, vendor selection, technology roadmap
@@ -37,7 +37,7 @@ Our fractional engagements often center on one or more of these transformation c
 
 ### Velocity transformation
 
-When engineering has slowed down and no one can explain why. Often the root cause is not engineering at all — it is unclear product direction, shifting priorities, or a disconnect between what the business needs and what the team is building. We identify the structural drag across both product and engineering and systematically remove it. We measure please-to-thank-you time: how long from request to delivered value.
+When engineering has slowed down and no one can explain why. Often the root cause is not engineering at all. It is unclear product direction, shifting priorities, or a disconnect between what the business needs and what the team is building. We identify the structural drag across both product and engineering and systematically remove it. We measure please-to-thank-you time: how long from request to delivered value.
 
 ### Legacy modernization
 
@@ -49,7 +49,7 @@ Hire and onboard engineering talent that fits your culture and velocity. Role de
 
 ## Speed with rigor
 
-Automated quality gates, test coverage, deployment pipelines with rollback capability, audit trails — these are what let teams move fast reliably, not slowly safely. Good engineering practices provide better risk controls than approval processes. We build that way from day one.
+Automated quality gates, test coverage, deployment pipelines with rollback capability, audit trails. These are what let teams move fast reliably, not slowly safely. Good engineering practices provide better risk controls than approval processes. We build that way from day one.
 
 ## Who this is for
 

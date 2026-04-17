@@ -9,7 +9,7 @@ directAnswer: 'When your AI initiative stalls, Adaptive Alchemy diagnoses what a
 hero:
   eyebrow: 'For Stalled AI Projects'
   headline: 'Your AI pilot did not fail because AI does not work. It failed because the approach was wrong.'
-  subheadline: 'You invested time, budget, and credibility in an AI initiative that did not deliver. The board is skeptical, the team is demoralized, and you are not sure what went wrong. We have seen this pattern dozens of times — and we know how to fix it.'
+  subheadline: 'You invested time, budget, and credibility in an AI initiative that did not deliver. The board is skeptical, the team is demoralized, and you are not sure what went wrong. We have seen this pattern dozens of times. We know how to fix it.'
   primaryCta:
     label: 'Get a Diagnosis'
     href: '/contact'
@@ -35,7 +35,7 @@ featureGrid:
   subheading: 'A structured approach to understanding what went wrong and getting back on track.'
   items:
     - title: 'Root Cause Diagnosis'
-      description: 'Was it a data problem? A use case selection problem? An engineering problem? A governance problem? We identify the actual failure point — not the symptoms.'
+      description: 'Was it a data problem? A use case selection problem? An engineering problem? A governance problem? We identify the actual failure point, not just the symptoms.'
     - title: 'Use Case Revalidation'
       description: 'Was the right problem being solved? We evaluate whether the original use case was viable and identify higher-confidence alternatives if it was not.'
     - title: 'Technical Architecture Review'
@@ -45,24 +45,24 @@ featureGrid:
     - title: 'Governance & Production Readiness'
       description: 'The controls, monitoring, and operational processes needed to run AI in production reliably. Most failed pilots never had these in place.'
     - title: 'Stakeholder Re-engagement'
-      description: 'Rebuild internal confidence. A credible plan, clear milestones, and early wins that demonstrate AI can deliver real value — not just interesting demos.'
+      description: 'Rebuild internal confidence. A credible plan, clear milestones, and early wins that demonstrate AI can deliver real value in production, not just interesting demos.'
 
 numberedOutcomes:
   heading: 'From stalled to production.'
   items:
     - title: 'Clear understanding of what went wrong'
-      description: 'A diagnosis leadership can read and act on. Not finger-pointing — actual root causes, explained plainly, with a path forward.'
+      description: 'A diagnosis leadership can read and act on. Not finger-pointing. Actual root causes, explained plainly, with a path forward.'
     - title: 'A realistic restart plan'
       description: 'Phased approach with concrete progress in the first 30-60 days. Confidence comes from results, not from another roadmap presentation.'
     - title: 'AI in production, not just in demo'
-      description: 'The goal is AI that runs real business processes reliably — with monitoring, governance, and measurable business impact.'
+      description: 'The goal is AI that runs real business processes reliably, with monitoring, governance, and measurable business impact.'
     - title: 'Internal capability that outlasts our engagement'
       description: 'We transfer knowledge and build internal capability so you are not dependent on us. The goal is self-sufficiency, not a consulting dependency.'
 
 credibility:
   heading: 'We fix what others leave broken.'
   paragraphs:
-    - 'Most AI consultancies sell the vision. We clean up after the vision did not survive contact with reality. We have rescued AI initiatives at companies of every size — from startups that bet the company on a failed pilot to enterprises where a million-dollar initiative produced nothing usable.'
+    - 'Most AI consultancies sell the vision. We clean up after the vision did not survive contact with reality. We have rescued AI initiatives at companies of every size, from startups that bet the company on a failed pilot to enterprises where a million-dollar initiative produced nothing usable.'
     - 'We build AI systems that run in production. That is a fundamentally different skill than building demos that work in a conference room.'
 
 faq:

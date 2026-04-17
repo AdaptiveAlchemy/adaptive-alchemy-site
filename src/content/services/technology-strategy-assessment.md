@@ -9,9 +9,9 @@ ctaLink: '/contact'
 
 ## The problem
 
-Most technology organizations cannot objectively assess themselves. Internal teams are too close to the codebase to see the structural problems clearly. External auditors often evaluate only one side — architecture or product — and deliver a report that nobody acts on. Boards are left guessing whether the technology is an asset or a liability.
+Most technology organizations cannot objectively assess themselves. Internal teams are too close to the codebase to see the structural problems clearly. External auditors often evaluate only one side (architecture or product) and deliver a report that nobody acts on. Boards are left guessing whether the technology is an asset or a liability.
 
-You need an assessment from someone who has actually led both product and technology — not an auditor who knows one side and guesses at the other.
+You need an assessment from someone who has actually led both product and technology. An auditor who knows only one side will guess at the other.
 
 ## What you get
 
@@ -31,7 +31,7 @@ Every finding comes with evidence. Every recommendation comes with a rationale. 
 
 ## Built to withstand scrutiny
 
-Every finding is documented with evidence and a clear rationale — not a list of opinions, but a defensible record you can hand to a board or a due diligence team. We have operated inside governance and compliance constraints at scale, so we know how to make the work hold up to that kind of review.
+Every finding is documented with evidence and a clear rationale. Not a list of opinions. A defensible record you can hand to a board or a due diligence team. We have operated inside governance and compliance constraints at scale, so we know how to make the work hold up to that kind of review.
 
 If implementation support is needed after the assessment, we can stay involved to guide delivery.
 

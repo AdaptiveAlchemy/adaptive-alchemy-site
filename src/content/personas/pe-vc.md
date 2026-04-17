@@ -9,7 +9,7 @@ directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners assess 
 hero:
   eyebrow: 'For PE/VC Funds & Operating Partners'
   headline: 'Most portfolio companies have no AI strategy worth defending. That is a valuation risk.'
-  subheadline: 'Most portfolio companies are running AI experiments with no coordination and nothing shipping. That is not a technology problem — it is a leadership and prioritization problem. We help funds turn scattered AI activity into documented capability that buyers actually value.'
+  subheadline: 'Most portfolio companies are running AI experiments with no coordination and nothing shipping. That is not a technology problem. It is a leadership and prioritization problem. We help funds turn scattered AI activity into documented capability that buyers actually value.'
   primaryCta:
     label: 'Schedule a Portfolio Review'
     href: '/contact'
@@ -53,11 +53,11 @@ numberedOutcomes:
     - title: 'Operational outcomes that show in the numbers'
       description: 'AI-powered operations that reduce cost per transaction, automate back-office functions, and let companies scale without proportional headcount growth.'
     - title: 'A stronger position at exit'
-      description: 'AI-capable companies attract better valuations. We build the documentation and evidence that strategic buyers and next-round investors want to see — before they ask for it.'
+      description: 'AI-capable companies attract better valuations. We build the documentation and evidence that strategic buyers and next-round investors want to see, before they ask for it.'
     - title: 'Consistency across the portfolio'
-      description: 'A repeatable assessment and implementation process that can be applied across multiple companies — with faster results and lower cost each time.'
+      description: 'A repeatable assessment and implementation process that can be applied across multiple companies, with faster results and lower cost each time.'
     - title: 'No diligence surprises'
-      description: 'Architecture documentation, governance evidence, and a clear AI roadmap ready before due diligence begins — so the process accelerates rather than stalls.'
+      description: 'Architecture documentation, governance evidence, and a clear AI roadmap ready before due diligence begins, so the process accelerates rather than stalls.'
 
 engagementTiers:
   heading: 'How we work with funds.'
@@ -67,7 +67,7 @@ engagementTiers:
       description: 'We assess AI maturity across your portfolio using a structured framework, then prioritize where AI investment will drive the highest return. The operating partner gets a dashboard view of AI readiness across all companies, with specific recommendations per company.'
     - eyebrow: 'Company-level engagement'
       title: 'Embedded AI strategy and execution'
-      description: 'For priority companies, we embed as fractional product and technology leadership. We co-design the AI strategy, build the product and technology roadmap, and execute alongside the team — not as an external report that sits on a shelf, but as hands-on delivery.'
+      description: 'For priority companies, we embed as fractional product and technology leadership. We co-design the AI strategy, build the product and technology roadmap, and execute alongside the team. Hands-on delivery, not a report that sits on a shelf.'
     - eyebrow: 'Transaction support'
       title: 'Technical due diligence and exit preparation'
       description: 'Whether you are acquiring or exiting, we prepare the technology organization for institutional scrutiny. Architecture documentation, scalability validation, governance evidence, and a compelling technology narrative for buyers.'
@@ -75,7 +75,7 @@ engagementTiers:
 credibility:
   heading: 'We have been on both sides of the diligence table.'
   paragraphs:
-    - 'We have built and scaled product and technology organizations at companies that went through institutional diligence — as operators, not consultants. We know what acquirers and next-round investors scrutinize because we have prepared companies for those conversations and sat across the table from the people asking the questions.'
+    - 'We have built and scaled product and technology organizations at companies that went through institutional diligence (as operators, not consultants). We know what acquirers and next-round investors scrutinize because we have prepared companies for those conversations and sat across the table from the people asking the questions.'
     - 'We build governance that actually works at the pace of a growth-stage company — not compliance frameworks designed for enterprises with dedicated risk teams.'
 
 faq:

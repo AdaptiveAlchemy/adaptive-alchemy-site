@@ -4,7 +4,7 @@ description: 'Get a credible AI strategy your board can stand behind. Adaptive A
 order: 2
 navLabel: 'For CEOs & Boards'
 
-directAnswer: 'Adaptive Alchemy helps non-technical executive teams build an AI strategy their board can stand behind. We assess your competitive position, identify high-confidence AI use cases, design governance controls, and deliver a phased roadmap with early wins within 90 days — giving leadership a concrete plan rather than a vision document.'
+directAnswer: 'Adaptive Alchemy helps non-technical executive teams build an AI strategy their board can stand behind. We assess your competitive position, identify high-confidence AI use cases, design governance controls, and deliver a phased roadmap with early wins within 90 days. Leadership gets a concrete plan rather than a vision document.'
 
 hero:
   eyebrow: 'For CEOs & Board Members'
@@ -42,15 +42,15 @@ featureGrid:
     - title: 'Investment Roadmap'
       description: 'Phased plan with clear milestones, budget ranges, and decision gates. Know what to fund, when to pause, and how to measure.'
     - title: 'Talent Assessment'
-      description: 'Honest evaluation of your team capabilities and a realistic plan to close gaps — through hiring, upskilling, or fractional leadership.'
+      description: 'Honest evaluation of your team capabilities and a realistic plan to close gaps, through hiring, upskilling, or fractional leadership.'
     - title: 'Early Wins'
-      description: 'High-confidence AI applications that can show measurable results within 90 days — building internal confidence before the larger strategic bets.'
+      description: 'High-confidence AI applications that can show measurable results within 90 days, building internal confidence before the larger strategic bets.'
 
 numberedOutcomes:
   heading: 'Outcomes that matter at the executive level.'
   items:
     - title: 'A position to articulate, not just react from'
-      description: 'Stop responding to what competitors announced. Build a clear AI strategy your leadership team can explain with confidence — and that holds up when the board asks hard questions.'
+      description: 'Stop responding to what competitors announced. Build a clear AI strategy your leadership team can explain with confidence, one that holds up when the board asks hard questions.'
     - title: 'Board-ready governance'
       description: 'Oversight structures that meet regulatory requirements and give the board confidence that AI adoption is being managed responsibly, without creating drag for the teams doing the work.'
     - title: 'Measurable results within 90 days'
@@ -66,7 +66,7 @@ engagementTiers:
       description: 'A structured evaluation of your organization across technology, data, talent, governance, and competitive positioning. Delivered as a board-ready report with a prioritized action plan. Typically 4-6 weeks.'
     - eyebrow: 'Embedded leadership'
       title: 'Fractional CPTO for AI strategy execution'
-      description: 'For organizations that need ongoing senior leadership to execute the strategy across both product and engineering. We embed a fractional CPTO (Chief Product and Technology Officer) alongside your team — attending board meetings, owning both product direction and technical decisions, and ensuring the strategy translates into measurable progress.'
+      description: 'For organizations that need ongoing senior leadership to execute the strategy across both product and engineering. We embed a fractional CPTO (Chief Product and Technology Officer) alongside your team, attending board meetings, owning both product direction and technical decisions, and ensuring the strategy translates into measurable progress.'
     - eyebrow: 'Board advisory'
       title: 'Ongoing strategic advisory'
       description: 'Regular strategic counsel to the CEO or board on technology decisions, AI investments, and governance. A trusted advisor who brings pattern recognition from across industries and company stages.'
@@ -74,7 +74,7 @@ engagementTiers:
 credibility:
   heading: 'We have been in these rooms.'
   paragraphs:
-    - 'We have presented AI strategy to skeptical boards and delivered it alongside engineering teams. We understand what boards need to see because we have sat on both sides of that conversation — the executive presenting, and the advisor helping them prepare. That perspective is what makes the advice usable, not just correct.'
+    - 'We have presented AI strategy to skeptical boards and delivered it alongside engineering teams. We understand what boards need to see because we have sat on both sides of that conversation: the executive presenting, and the advisor helping them prepare. That perspective is what makes the advice usable, not just correct.'
     - 'We have worked across startups, scale-ups, and Fortune 50 companies. The patterns that separate successful AI investments from expensive experiments are consistent across all of them.'
 
 faq:

@@ -9,7 +9,7 @@ directAnswer: 'Adaptive Alchemy provides senior advisory for first-time and scal
 hero:
   eyebrow: 'For CTOs & Engineering Leaders'
   headline: 'The CTO seat is lonely. It does not have to be.'
-  subheadline: 'Whether you are a first-time CTO figuring out the role or a seasoned leader whose organization is scaling faster than you can handle alone — you need a senior peer who has been there. Not a coach with a framework. A practitioner who has built, scaled, and fixed product and technology organizations.'
+  subheadline: 'Whether you are a first-time CTO figuring out the role or a seasoned leader whose organization is scaling faster than you can handle alone, you need a senior peer who has been there. Not a coach with a framework. A practitioner who has built, scaled, and fixed product and technology organizations.'
   primaryCta:
     label: 'Book a Conversation'
     href: '/contact'
@@ -23,7 +23,7 @@ painPoints:
   items:
     - quote: 'I just became CTO and I do not know what I do not know. The team is looking to me for answers I am not sure I have.'
       label: 'New in the seat'
-    - quote: 'My engineering org has tripled in a year. The architecture decisions, the people issues, the board expectations — I cannot do this alone anymore.'
+    - quote: 'My engineering org has tripled in a year. The architecture decisions, the people issues, the board expectations. I cannot do this alone anymore.'
       label: 'Scaling beyond capacity'
     - quote: 'I need someone I can be honest with about what is not working. I cannot have that conversation with my CEO or my team.'
       label: 'The confidential sounding board'
@@ -35,7 +35,7 @@ featureGrid:
   subheading: 'Practical and confidential, shaped around where you actually are.'
   items:
     - title: 'Strategic Sounding Board'
-      description: 'Regular sessions to work through your hardest decisions. Product strategy, architecture, org design, vendor selection, board communication — with someone who has faced these decisions before.'
+      description: 'Regular sessions to work through your hardest decisions. Product strategy, architecture, org design, vendor selection, board communication, with someone who has faced these decisions before.'
     - title: 'Architecture & Technical Review'
       description: 'Second pair of senior eyes on your most consequential technical decisions. Scalability, security posture, build-vs-buy, technology selection.'
     - title: 'Engineering Org Design'
@@ -59,12 +59,12 @@ numberedOutcomes:
     - title: 'A scalable engineering organization'
       description: 'Build the team structure, processes, and culture that outlast you. So the org runs well even when you are not in every decision.'
     - title: 'Confidential, honest feedback'
-      description: 'Get the truth about what is working and what is not. No politics, no agenda — just an experienced peer who is invested in your success.'
+      description: 'Get the truth about what is working and what is not. No politics, no agenda. Just an experienced peer who is invested in your success.'
 
 credibility:
   heading: 'We have held the seat you are in.'
   paragraphs:
-    - 'We have been the first-time CTO who did not know what they did not know. We have been the scaling CTO whose org grew faster than their capacity to lead it. We have been the CTO asked to own product strategy on top of an already full plate. These are not hypothetical situations we advise on — they are situations we have navigated.'
+    - 'We have been the first-time CTO who did not know what they did not know. We have been the scaling CTO whose org grew faster than their capacity to lead it. We have been the CTO asked to own product strategy on top of an already full plate. These are not hypothetical situations we advise on. They are situations we have navigated.'
     - 'Every engagement is confidential. What you share stays between us.'
 
 faq:

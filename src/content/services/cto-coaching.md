@@ -1,6 +1,6 @@
 ---
 title: 'CTO Coaching'
-description: 'One-on-one coaching for first-time CTOs, CPOs, and engineering leaders who need an experienced product and technology executive in their corner. You own the decisions — we help you think through them.'
+description: 'One-on-one coaching for first-time CTOs, CPOs, and engineering leaders who need an experienced product and technology executive in their corner. You own the decisions. We help you think through them.'
 shortDescription: 'One-on-one coaching for CTOs, CPOs, and engineering leaders who need a senior partner in their corner.'
 order: 4
 cta: 'Get an experienced product and technology leader in your corner.'
@@ -9,7 +9,7 @@ ctaLink: '/contact'
 
 ## The problem
 
-The jump from senior engineer or engineering manager to CTO is one of the hardest transitions in technology. The skills that got you here — technical depth, hands-on problem solving, good judgment on hard problems — remain valuable. But the job changes fundamentally when you become responsible for what an entire organization produces, not just what you personally build.
+The jump from senior engineer or engineering manager to CTO is one of the hardest transitions in technology. The skills that got you here (technical depth, hands-on problem solving, good judgment on hard problems) remain valuable. But the job changes fundamentally when you become responsible for what an entire organization produces, not just what you personally build.
 
 Suddenly you are responsible for board communication, product strategy, hiring, vendor decisions, budget, organizational design, and increasingly, product direction alongside technology execution. Most people who have made this transition will tell you the hardest parts were the ones nobody warned them about.
 

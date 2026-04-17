@@ -9,7 +9,7 @@ directAnswer: 'A fractional CTO from Adaptive Alchemy gives founders senior prod
 hero:
   eyebrow: 'For Founders'
   headline: 'Every founder needs a senior product and technology advisor they trust. Most cannot afford one full-time.'
-  subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who has made these decisions before — someone with skin in the outcome, not just a report to hand over.'
+  subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who has made these decisions before. Someone with skin in the outcome, not just a report to hand over.'
   primaryCta:
     label: 'Book an Intro Call'
     href: '/contact'
@@ -50,18 +50,18 @@ numberedOutcomes:
   heading: 'What changes when you have an advisor.'
   items:
     - title: 'Faster, better decisions'
-      description: 'Stop working through hard calls alone. Think them through with someone who has made them before — at companies across every stage from seed to exit.'
+      description: 'Stop working through hard calls alone. Think them through with someone who has made them before, at companies across every stage from seed to exit.'
     - title: 'Technical credibility with investors'
       description: 'Walk into investor meetings with a technology narrative you can actually defend. Specific, honest, and built to hold up under real diligence questions.'
     - title: 'Stronger technical hires'
       description: 'Hire the right people the first time. An advisor who knows what great engineering talent looks like helps you avoid the expensive mis-hires.'
     - title: 'Confidence in your direction'
-      description: 'Know that your product strategy, architecture, team, and roadmap are sound — not because someone told you what you wanted to hear, but because a senior practitioner validated it.'
+      description: 'Know that your product strategy, architecture, team, and roadmap are sound. Not because someone told you what you wanted to hear. Because a senior practitioner validated it.'
 
 credibility:
   heading: 'We have been where you are.'
   paragraphs:
-    - 'We have built product and technology organizations from scratch, navigated fundraising rounds, and prepared companies for acquisition. We know what the hard parts of the founder journey actually feel like — the decisions you cannot discuss with your team, the investor conversations where you are not sure what they are really asking, the cost of a wrong call you did not see coming.'
+    - 'We have built product and technology organizations from scratch, navigated fundraising rounds, and prepared companies for acquisition. We know what the hard parts of the founder journey actually feel like: the decisions you cannot discuss with your team, the investor conversations where you are not sure what they are really asking, the cost of a wrong call you did not see coming.'
     - 'That experience is what makes this different from a consulting engagement. We are invested in your outcome, not just your next deliverable.'
 
 faq:

@@ -11,7 +11,7 @@ ctaLink: '/contact'
 
 Fundraising and M&A processes expose product and technology organizations to intense scrutiny. Investors and acquirers ask detailed questions about product-market fit, architecture, scalability, security posture, team capability, and technical debt. Most companies are not prepared for these conversations.
 
-The result: rounds take longer, valuations get discounted, and deals fall through. Often the product and technology are genuinely strong — but reviewers cannot see it clearly in the documentation they are given.
+The result: rounds take longer, valuations get discounted, and deals fall through. Often the product and technology are genuinely strong. Reviewers just cannot see it clearly in the documentation they are given.
 
 ## What you get
 
@@ -31,7 +31,7 @@ Preparation that covers both what is true about your product and technology, and
 
 Due diligence teams look for red flags: undocumented architecture, missing audit trails, unclear governance, ad-hoc security practices. We prepare organizations to present with the rigor that institutional investors expect.
 
-The goal is not to make things look better than they are. It is to make sure that what is good is actually visible — that your testing, deployment, monitoring, and incident response practices are documented clearly enough that reviewers can assess them rather than guess at them.
+The goal is not to make things look better than they are. It is to make sure that what is good is actually visible: your testing, deployment, monitoring, and incident response practices documented clearly enough that reviewers can assess them rather than guess at them.
 
 ## Who this is for
 
