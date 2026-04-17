@@ -45,7 +45,9 @@ jobs:
         run: pnpm lint:md
 
       - name: Lint workflow files
-        uses: rhysd/actionlint@v1
+        run: |
+          curl -sfL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash | bash -s -- 1.7.12
+          ./actionlint -color .github/workflows/skills-deploy.yml
 
       - name: Type check
         run: pnpm type-check
