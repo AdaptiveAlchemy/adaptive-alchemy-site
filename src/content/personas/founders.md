@@ -8,7 +8,7 @@ directAnswer: 'A fractional CTO from Adaptive Alchemy gives founders senior prod
 
 hero:
   eyebrow: 'For Founders'
-  headline: 'Every founder needs a senior product and technology advisor they trust. Most cannot afford one full-time.'
+  headline: 'Every founder needs a seasoned product and technology advisor they trust. Most cannot afford one full-time.'
   subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who has made these decisions before. Someone with skin in the outcome, not just a report to hand over.'
   primaryCta:
     label: 'Book an Intro Call'
@@ -22,7 +22,7 @@ painPoints:
   items:
     - quote: 'I am making product and technology decisions that I know will matter for years, and I have nobody senior to pressure-test them with.'
       label: 'The lonely decision'
-    - quote: 'My dev team says everything is fine, but I cannot tell if we are building the right thing or building it the right way.'
+    - quote: "My dev team says everything is fine, but I can't tell if we are building the right thing or building it the right way."
       label: 'The visibility gap'
     - quote: 'Investors are asking about our architecture and scalability. I need to answer with confidence.'
       label: 'The fundraising question'
@@ -31,7 +31,7 @@ painPoints:
 
 featureGrid:
   heading: 'What you get from an advisory relationship.'
-  subheading: 'A senior product and technology partner, not a vendor. Here is what that looks like in practice.'
+  subheading: 'A seasoned product and technology partner, not a vendor. Here is what that looks like in practice.'
   items:
     - title: 'Scheduled Strategic Time'
       description: 'Regular 1:1 sessions to work through your hardest product and technology decisions. Roadmap priorities, architecture, hiring, investor prep — whatever is most urgent.'
@@ -56,7 +56,7 @@ numberedOutcomes:
     - title: 'Stronger technical hires'
       description: 'Hire the right people the first time. An advisor who knows what great engineering talent looks like helps you avoid the expensive mis-hires.'
     - title: 'Confidence in your direction'
-      description: 'Know that your product strategy, architecture, team, and roadmap are sound. Not because someone told you what you wanted to hear. Because a senior practitioner validated it.'
+      description: 'Know that your product strategy, architecture, team, and roadmap are sound. Not because someone told you what you wanted to hear. Because a seasoned practitioner validated it.'
 
 credibility:
   heading: 'We have been where you are.'
