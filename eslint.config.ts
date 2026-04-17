@@ -6,6 +6,7 @@ import prettier from 'eslint-config-prettier/flat'
 import astro from 'eslint-plugin-astro'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import react from 'eslint-plugin-react'
+import security from 'eslint-plugin-security'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import tseslint from 'typescript-eslint'
 
@@ -29,6 +30,7 @@ export default defineConfig([
   ...astro.configs.recommended,
   ...astro.configs['flat/jsx-a11y-recommended'],
   js.configs.recommended,
+  security.configs.recommended,
   ...tseslint.configs.recommended,
   {
     plugins: { 'simple-import-sort': simpleImportSort },

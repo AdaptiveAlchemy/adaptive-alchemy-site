@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -18,11 +22,11 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10.30.2
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: '.nvmrc'
           cache: pnpm
 
       - name: Install dependencies
@@ -40,11 +44,17 @@ jobs:
       - name: Lint markdown
         run: pnpm lint:md
 
+      - name: Lint workflow files
+        uses: rhysd/actionlint@v1
+
       - name: Type check
         run: pnpm type-check
 
       - name: Build
         run: pnpm build
+
+      - name: Audit dependencies
+        run: pnpm audit --prod --audit-level high
 
   lighthouse:
     name: Lighthouse CI
@@ -55,11 +65,11 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10.30.2
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: '.nvmrc'
           cache: pnpm
 
       - name: Install dependencies
