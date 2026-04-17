@@ -19,6 +19,8 @@ We build with AI agents every day. Our own operations run on agent-first workflo
 
 That practitioner depth, combined with CTO/CPTO-grade strategic perspective, means we can connect what is technically possible to what is operationally and commercially valuable. We do not just deploy agents. We help you redesign how work gets done — from product discovery to engineering delivery.
 
+Our posture is strategy-first and execution-accountable. We guide the transformation end to end, and when additional implementation capacity is needed, we can bring trusted operators into the workstream under clear standards and governance.
+
 ## Enterprise-grade, not vibe-coded
 
 There is a reason executives hesitate to trust AI-generated output in production systems. Too much of what passes for "AI implementation" is fragile, untested, and ungoverned — built fast with no thought for reliability, auditability, or risk management.

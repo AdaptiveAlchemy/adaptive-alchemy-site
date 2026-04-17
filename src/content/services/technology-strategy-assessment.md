@@ -35,6 +35,8 @@ Our assessments are built for scrutiny. Every finding is documented with evidenc
 
 We understand governance, auditability, and regulatory context because we have operated inside those constraints at scale. The result is an assessment your compliance team trusts and your engineering team respects.
 
+We are strategy-first, but not strategy-only. If implementation capacity is needed after the assessment, we can stay involved to guide delivery and help mobilize trusted operators.
+
 ## Who this is for
 
 - **Boards and CEOs** who need an honest, independent view of their technology organization
@@ -48,6 +50,6 @@ We understand governance, auditability, and regulatory context because we have o
 1. **Scope and align** (Week 1) — We define what matters most for your situation and tailor the assessment accordingly
 2. **Deep dive** (Weeks 2-3) — Codebase analysis, architecture review, team interviews, infrastructure audit, process evaluation
 3. **Synthesize and recommend** (Week 4) — Findings report with prioritized action plan, presented to leadership
-4. **Support** (2 weeks post-delivery) — Implementation guidance as your team acts on the recommendations
+4. **Support** (2 weeks post-delivery) — Implementation guidance as your team executes, with optional support to mobilize trusted operators when needed
 
 **Typical engagement:** 2-4 weeks, depending on scope and complexity.

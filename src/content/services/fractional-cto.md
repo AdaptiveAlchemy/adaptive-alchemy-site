@@ -17,6 +17,8 @@ Advisors write recommendations. We embed as your CTO/CPTO (Chief Product and Tec
 
 Embedded product and technology leadership that functions as part of your team:
 
+We lead with strategic direction and decision quality, then stay accountable through execution. When specialized build capacity is required, we can mobilize trusted operators without turning the engagement into a staffing model.
+
 - **Product strategy and roadmap ownership** — Feature prioritization, product-market fit validation, roadmap decisions grounded in both customer needs and technical reality
 - **Technology strategy and architecture** — Architecture decisions, build-vs-buy, vendor selection, technology roadmap
 - **Weekly leadership presence** — Team meetings, one-on-ones, sprint planning, retrospectives
