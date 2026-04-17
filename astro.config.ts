@@ -4,11 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
 
 const getSiteURL = () => {
-  return 'https://www.adaptivealchemy.io'
+  return process.env.SITE_URL || 'https://www.adaptivealchemy.io'
 }
 
 const getBasePath = () => {
-  return '/'
+  return process.env.BASE_PATH || '/'
 }
 
 // https://astro.build/config
