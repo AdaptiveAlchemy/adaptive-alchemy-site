@@ -1,0 +1,37 @@
+---
+export interface Props {
+  heading: string
+  subheading?: string
+  items: ReadonlyArray<{ quote: string; label: string }>
+}
+
+const { heading, subheading, items } = Astro.props
+---
+
+<section class="border-y border-white/5 bg-surface px-6 py-20">
+  <div class="mx-auto max-w-7xl">
+    <h2 class="text-center font-serif text-3xl text-text-primary md:text-4xl">
+      {heading}
+    </h2>
+    {
+      subheading && (
+        <p class="mx-auto mt-4 max-w-2xl text-center text-lg text-text-muted">
+          {subheading}
+        </p>
+      )
+    }
+
+    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+      {
+        items.map(({ quote, label }) => (
+          <div class="rounded-lg border border-white/5 bg-ink p-8">
+            <p class="text-lg italic leading-relaxed text-text-muted">
+              &ldquo;{quote}&rdquo;
+            </p>
+            <p class="mt-4 text-sm text-gold">&mdash; {label}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

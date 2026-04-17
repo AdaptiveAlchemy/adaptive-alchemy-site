@@ -1,0 +1,116 @@
+---
+import CTABand from '@/components/sections/CTABand.astro'
+import Hero from '@/components/sections/Hero.astro'
+import ServiceCards from '@/components/sections/ServiceCards.astro'
+import { SITE_TITLE, SITE_URL } from '@/consts'
+import PageLayout from '@/layouts/PageLayout.astro'
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Adaptive Alchemy',
+  url: SITE_URL,
+  description:
+    'Product and technology strategy leadership for growth-stage companies and their investors.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Adaptive Alchemy'
+  }
+}
+---
+
+<PageLayout
+  title={SITE_TITLE}
+  description="Adaptive Alchemy: fractional CTO services, product and technology strategy consulting, and technical due diligence for growth-stage companies and PE/VC funds. Senior product and technology leadership, on demand."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <Hero />
+
+  <!-- Problem statements — in the buyer's voice -->
+  <section class="px-6 py-20">
+    <div class="mx-auto max-w-7xl">
+      <h2 class="text-center font-serif text-3xl text-text-primary md:text-4xl">
+        We solve the problems that keep product and technology leaders up at
+        night.
+      </h2>
+
+      <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="rounded-lg border border-white/5 p-8">
+          <p class="text-lg italic leading-relaxed text-text-muted">
+            &ldquo;We are shipping features but not moving the needle on what
+            matters.&rdquo;
+          </p>
+          <a
+            href="/services/fractional-cto"
+            class="mt-4 inline-block text-sm text-accent hover:text-accent-hover"
+          >
+            Fractional CTO Leadership &rarr;
+          </a>
+        </div>
+
+        <div class="rounded-lg border border-white/5 p-8">
+          <p class="text-lg italic leading-relaxed text-text-muted">
+            &ldquo;Investors are asking questions about our architecture I
+            cannot confidently answer.&rdquo;
+          </p>
+          <a
+            href="/services/technology-strategy-assessment"
+            class="mt-4 inline-block text-sm text-accent hover:text-accent-hover"
+          >
+            Product &amp; Technology Strategy Review &rarr;
+          </a>
+        </div>
+
+        <div class="rounded-lg border border-white/5 p-8">
+          <p class="text-lg italic leading-relaxed text-text-muted">
+            &ldquo;We need to be ready for due diligence in 90 days.&rdquo;
+          </p>
+          <a
+            href="/services/investor-readiness"
+            class="mt-4 inline-block text-sm text-accent hover:text-accent-hover"
+          >
+            Investor Readiness Program &rarr;
+          </a>
+        </div>
+
+        <div class="rounded-lg border border-white/5 p-8">
+          <p class="text-lg italic leading-relaxed text-text-muted">
+            &ldquo;Everyone is talking about AI agents but I do not know where
+            to start.&rdquo;
+          </p>
+          <a
+            href="/services/agent-first-transformation"
+            class="mt-4 inline-block text-sm text-accent hover:text-accent-hover"
+          >
+            Agent-First Transformation &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="border-y border-white/5 bg-surface px-6 py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="font-serif text-3xl text-text-primary md:text-4xl">
+        A collective of senior strategists. Not a staffing agency.
+      </h2>
+      <p class="mt-6 text-lg leading-relaxed text-text-muted">
+        We bring 20+ years of pattern recognition across startups, scale-ups,
+        and Fortune 50 companies. We have built, scaled, and fixed product and
+        technology organizations at every stage — from pre-seed to PE portfolio
+        exits.
+      </p>
+      <a
+        href="/about"
+        class="mt-8 inline-block text-sm text-accent hover:text-accent-hover"
+      >
+        Learn about our approach &rarr;
+      </a>
+    </div>
+  </section>
+
+  <ServiceCards />
+
+  <CTABand />
+</PageLayout>

@@ -1,0 +1,6 @@
+approveBuildsList: sharp
+
+onlyBuiltDependencies:
+  - chromedriver
+  - esbuild
+  - sharp

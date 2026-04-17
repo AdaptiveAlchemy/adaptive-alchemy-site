@@ -1,0 +1,85 @@
+---
+title: 'Rescue for Stalled AI Projects'
+description: 'Your AI initiative stalled. We diagnose what went wrong, fix the approach, and get you to production. Adaptive Alchemy specializes in turning failed AI pilots into working AI operations.'
+order: 5
+navLabel: 'For Stalled AI Projects'
+
+directAnswer: 'When your AI initiative stalls, Adaptive Alchemy diagnoses the root cause — whether data quality, use case selection, engineering execution, or organizational alignment — and builds a credible restart plan. We get AI projects from failed proof of concept to production deployment with quick wins in the first 60 days that rebuild stakeholder confidence.'
+
+hero:
+  eyebrow: 'For Stalled AI Projects'
+  headline: 'Your AI pilot did not fail because AI does not work. It failed because the approach was wrong.'
+  subheadline: 'You invested time, budget, and credibility in an AI initiative that did not deliver. The board is skeptical, the team is demoralized, and you are not sure what went wrong. We have seen this pattern dozens of times — and we know how to fix it.'
+  primaryCta:
+    label: 'Get a Diagnosis'
+    href: '/contact'
+  secondaryCta:
+    label: 'See AI Transformation Services'
+    href: '/services/agent-first-transformation'
+
+painPoints:
+  heading: 'We have seen every way AI projects fail.'
+  subheading: 'These are the patterns behind most stalled initiatives:'
+  items:
+    - quote: 'We built a proof of concept that worked in demo but could not survive production data.'
+      label: 'The POC trap'
+    - quote: 'We hired an AI team but they are building interesting technology that is not connected to business outcomes.'
+      label: 'The science project'
+    - quote: 'Our vendor delivered a model, but nobody in the organization knows how to integrate, monitor, or maintain it.'
+      label: 'The handoff gap'
+    - quote: 'Leadership lost confidence after the first attempt. Now nobody wants to sponsor the next one.'
+      label: 'The credibility deficit'
+
+featureGrid:
+  heading: 'How we diagnose and fix stalled AI projects.'
+  subheading: 'A structured approach to understanding what went wrong and getting back on track.'
+  items:
+    - title: 'Root Cause Diagnosis'
+      description: 'Was it a data problem? A use case selection problem? An engineering problem? A governance problem? We identify the actual failure point — not the symptoms.'
+    - title: 'Use Case Revalidation'
+      description: 'Was the right problem being solved? We evaluate whether the original use case was viable and identify higher-confidence alternatives if it was not.'
+    - title: 'Technical Architecture Review'
+      description: 'Evaluate the existing technical work. What can be salvaged, what needs to be rebuilt, and what should be abandoned. Honest assessment, no sunk-cost bias.'
+    - title: 'Team & Capability Assessment'
+      description: 'Do you have the right people? The right skills? The right organizational structure to deliver AI in production? Gap analysis with a realistic plan to close gaps.'
+    - title: 'Governance & Production Readiness'
+      description: 'The controls, monitoring, and operational processes needed to run AI in production reliably. Most failed pilots never had these in place.'
+    - title: 'Stakeholder Re-engagement'
+      description: 'Rebuild internal confidence. A credible plan, clear milestones, and early wins that demonstrate AI can deliver real value — not just interesting demos.'
+
+numberedOutcomes:
+  heading: 'From stalled to production.'
+  items:
+    - title: 'Clear understanding of what went wrong'
+      description: 'An honest, jargon-free diagnosis that leadership can understand. Not finger-pointing — root causes and a path forward.'
+    - title: 'A credible restart plan'
+      description: 'Phased approach with quick wins in the first 30-60 days. Rebuild confidence through demonstrated progress, not promises.'
+    - title: 'AI in production, not just in demo'
+      description: 'The goal is AI that runs real business processes reliably — with monitoring, governance, and measurable business impact.'
+    - title: 'Internal capability that outlasts our engagement'
+      description: 'We transfer knowledge and build internal capability so you are not dependent on us. The goal is self-sufficiency, not a consulting dependency.'
+
+credibility:
+  heading: 'We fix what others leave broken.'
+  paragraphs:
+    - 'Most AI consultancies sell the vision. We clean up after the vision did not survive contact with reality. We have rescued AI initiatives at companies of every size — from startups that bet the company on a failed pilot to enterprises where a million-dollar initiative produced nothing usable.'
+    - 'We build AI systems that run in production. That is a fundamentally different skill than building demos that work in a conference room.'
+
+faq:
+  - question: 'Why do most enterprise AI projects fail?'
+    answer: 'Most enterprise AI projects fail due to poor use case selection, not technology limitations. The most common failure patterns are choosing a problem that does not have sufficient data, building a proof of concept that cannot survive production conditions, hiring an AI team disconnected from business operations, and lacking the governance and monitoring infrastructure to run AI reliably. Each of these is fixable with the right approach.'
+  - question: 'How do you rescue a stalled AI project?'
+    answer: 'We start with a root cause diagnosis that identifies the actual failure point — whether data quality, use case selection, engineering execution, organizational alignment, or vendor delivery. Then we revalidate the use case, assess what technical work can be salvaged, and build a phased restart plan with quick wins in the first 30 to 60 days to rebuild internal confidence and demonstrate progress.'
+  - question: 'What is the difference between an AI proof of concept and production AI?'
+    answer: 'An AI proof of concept demonstrates that a model can produce acceptable results on sample data. Production AI requires data pipelines, monitoring, drift detection, fallback mechanisms, governance controls, integration with business workflows, and operational processes for ongoing maintenance. The gap between POC and production is where most AI initiatives stall. Closing that gap requires engineering discipline, not data science alone.'
+  - question: 'How long does it take to get a stalled AI project back on track?'
+    answer: 'A typical rescue engagement begins with a 2-to-3-week diagnostic phase that produces a clear root cause analysis and restart plan. Quick wins are delivered within 30 to 60 days to rebuild stakeholder confidence. Full production deployment depends on the complexity of the use case, but most initiatives can reach production within 3 to 6 months from restart with the right approach and commitment.'
+  - question: 'Should we restart our AI project or try a different use case?'
+    answer: 'That depends on the root cause of the stall. If the original use case was viable but the approach was flawed, a restart with corrected methodology is often faster and cheaper than starting over. If the use case itself was poorly selected — meaning the data was insufficient, the business impact was unclear, or the problem was not suitable for AI — then pivoting to a better-qualified use case is the right move. Our diagnostic process makes this determination early.'
+
+ctaBand:
+  headline: 'Your AI project is not dead. It just needs the right approach.'
+  subheadline: 'A 30-minute conversation to understand what happened, what you have tried, and what a realistic path to production looks like.'
+  ctaLabel: 'Get a Diagnosis'
+  ctaHref: '/contact'
+---

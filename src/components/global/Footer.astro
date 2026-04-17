@@ -1,0 +1,148 @@
+---
+import { SITE_TITLE } from '@/consts'
+
+const currentYear = new Date().getFullYear()
+
+const serviceLinks = [
+  {
+    label: 'Product & Technology Strategy Review',
+    href: '/services/technology-strategy-assessment'
+  },
+  { label: 'Investor Readiness Program', href: '/services/investor-readiness' },
+  {
+    label: 'Fractional CTO Leadership',
+    href: '/services/fractional-cto'
+  },
+  { label: 'CTO Coaching', href: '/services/cto-coaching' },
+  {
+    label: 'Agent-First Transformation',
+    href: '/services/agent-first-transformation'
+  }
+]
+
+const companyLinks = [
+  { label: 'About', href: '/about' },
+  { label: 'Our Approach', href: '/approach' },
+  { label: 'Insights', href: '/insights' },
+  { label: 'Contact', href: '/contact' }
+]
+
+const personaLinks = [
+  { label: 'For PE/VC Funds', href: '/for/pe-vc' },
+  { label: 'For CEOs & Boards', href: '/for/ceos-boards' },
+  { label: 'For Founders', href: '/for/founders' },
+  { label: 'For CTOs', href: '/for/ctos' },
+  { label: 'Stalled AI Projects', href: '/for/stalled-ai-projects' }
+]
+---
+
+<footer class="border-t border-white/5 bg-ink" role="contentinfo">
+  <div class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid grid-cols-2 gap-8 sm:gap-12 md:grid-cols-4">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-1">
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/assets/adaptive-alchemy-logo.png"
+            alt=""
+            class="h-8 w-8"
+            width="32"
+            height="32"
+          />
+          <span class="font-serif text-lg text-text-primary">{SITE_TITLE}</span>
+        </a>
+        <p class="mt-4 text-sm leading-relaxed text-text-muted">
+          Product and technology strategy leadership for growth-stage companies
+          and their investors.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="mb-4 text-sm font-medium uppercase tracking-wide text-gold">
+          Services
+        </h3>
+        <ul class="space-y-3" role="list">
+          {
+            serviceLinks.map(({ label, href }) => (
+              <li>
+                <a
+                  href={href}
+                  class="text-sm text-text-muted transition-colors duration-200 hover:text-text-primary"
+                >
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Who We Help -->
+      <div>
+        <h3 class="mb-4 text-sm font-medium uppercase tracking-wide text-gold">
+          Who We Help
+        </h3>
+        <ul class="space-y-3" role="list">
+          {
+            personaLinks.map(({ label, href }) => (
+              <li>
+                <a
+                  href={href}
+                  class="text-sm text-text-muted transition-colors duration-200 hover:text-text-primary"
+                >
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="mb-4 text-sm font-medium uppercase tracking-wide text-gold">
+          Company
+        </h3>
+        <ul class="space-y-3" role="list">
+          {
+            companyLinks.map(({ label, href }) => (
+              <li>
+                <a
+                  href={href}
+                  class="text-sm text-text-muted transition-colors duration-200 hover:text-text-primary"
+                >
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div
+      class="mt-12 flex flex-col items-center justify-between border-t border-white/5 pt-8 md:flex-row"
+    >
+      <p class="text-sm text-text-muted">
+        &copy; {currentYear}
+        {SITE_TITLE}. All rights reserved.
+      </p>
+      <div class="mt-4 flex gap-6 md:mt-0">
+        <a
+          href="/privacy"
+          class="text-sm text-text-muted transition-colors hover:text-text-primary"
+        >
+          Privacy
+        </a>
+        <a
+          href="/terms"
+          class="text-sm text-text-muted transition-colors hover:text-text-primary"
+        >
+          Terms
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

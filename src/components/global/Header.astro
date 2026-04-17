@@ -1,0 +1,161 @@
+---
+import { SITE_TITLE } from '@/consts'
+
+const navItems = [
+  { label: 'Services', href: '/services' },
+  { label: 'Who We Help', href: '/for' },
+  { label: 'Approach', href: '/approach' },
+  { label: 'About', href: '/about' }
+]
+
+const currentPath = Astro.url.pathname
+---
+
+<header class="fixed left-0 right-0 top-0 z-40 border-b border-white/5 bg-ink">
+  <nav
+    class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
+    aria-label="Primary navigation"
+  >
+    <a
+      href="/"
+      class="flex items-center gap-3"
+      aria-label={`${SITE_TITLE} home`}
+    >
+      <img
+        src="/assets/adaptive-alchemy-logo.png"
+        alt=""
+        class="h-8 w-8"
+        width="32"
+        height="32"
+      />
+      <span class="font-serif text-lg text-text-primary">{SITE_TITLE}</span>
+    </a>
+
+    <ul class="hidden items-center gap-8 md:flex" role="list">
+      {
+        navItems.map(({ label, href }) => (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                'text-md transition-colors duration-200',
+                currentPath.startsWith(href)
+                  ? 'text-gold'
+                  : 'text-text-muted hover:text-text-primary'
+              ]}
+              aria-current={currentPath.startsWith(href) ? 'page' : undefined}
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <a
+      href="/contact"
+      class="hidden rounded-sm bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors duration-200 hover:bg-accent-hover md:inline-block"
+    >
+      Book a Call
+    </a>
+
+    <!-- Mobile menu toggle -->
+    <button
+      class="text-text-muted md:hidden"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      id="mobile-menu-toggle"
+    >
+      <!-- Hamburger icon -->
+      <svg
+        id="icon-hamburger"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        >
+        </path>
+      </svg>
+      <!-- Close icon (hidden by default) -->
+      <svg
+        id="icon-close"
+        xmlns="http://www.w3.org/2000/svg"
+        class="hidden h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        >
+        </path>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-white/5 bg-ink/95 backdrop-blur-md md:hidden"
+    role="menu"
+  >
+    <ul class="flex flex-col px-6 py-4" role="list">
+      {
+        navItems.map(({ label, href }) => (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                'block py-3 text-base transition-colors duration-200',
+                currentPath.startsWith(href)
+                  ? 'text-gold'
+                  : 'text-text-muted hover:text-text-primary'
+              ]}
+              role="menuitem"
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+      <li class="pt-4">
+        <a
+          href="/contact"
+          class="block rounded-sm bg-accent px-5 py-3 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-accent-hover"
+          role="menuitem"
+        >
+          Book a Call
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-[73px]"></div>
+
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle')
+  const menu = document.getElementById('mobile-menu')
+  const iconOpen = document.getElementById('icon-hamburger')
+  const iconClose = document.getElementById('icon-close')
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false
+    toggle.setAttribute('aria-expanded', String(isOpen))
+    toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu')
+    iconOpen?.classList.toggle('hidden', isOpen)
+    iconClose?.classList.toggle('hidden', !isOpen)
+  })
+</script>

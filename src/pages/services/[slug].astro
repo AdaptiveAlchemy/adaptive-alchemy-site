@@ -1,0 +1,102 @@
+---
+import { getCollection, render } from 'astro:content'
+
+import CTABand from '@/components/sections/CTABand.astro'
+import { SITE_URL } from '@/consts'
+import PageLayout from '@/layouts/PageLayout.astro'
+
+export async function getStaticPaths() {
+  const services = await getCollection('services')
+  return services.map((service) => ({
+    params: { slug: service.id.replace(/\.md$/, '') },
+    props: { service }
+  }))
+}
+
+const { service } = Astro.props
+const { Content } = await render(service)
+const slug = service.id.replace(/\.md$/, '')
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.data.title,
+  description: service.data.description,
+  url: `${SITE_URL}/services/${slug}`,
+  provider: {
+    '@type': 'Organization',
+    name: 'Adaptive Alchemy',
+    url: SITE_URL
+  },
+  serviceType: 'Technology Consulting',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Global (Remote)'
+  },
+  audience: {
+    '@type': 'Audience',
+    audienceType: 'Growth-stage startups and their investors'
+  }
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Services',
+      item: `${SITE_URL}/services`
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: service.data.title,
+      item: `${SITE_URL}/services/${slug}`
+    }
+  ]
+}
+---
+
+<PageLayout title={service.data.title} description={service.data.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-3xl">
+      <a
+        href="/services"
+        class="mb-8 inline-block text-sm text-text-muted transition-colors hover:text-accent"
+      >
+        &larr; All services
+      </a>
+      <h1 class="font-serif text-4xl text-text-primary md:text-5xl">
+        {service.data.title}
+      </h1>
+      <p class="mt-6 text-lg leading-relaxed text-text-muted">
+        {service.data.description}
+      </p>
+    </div>
+  </section>
+
+  <section class="px-6 pb-24">
+    <div class="prose prose-invert mx-auto max-w-3xl">
+      <Content />
+    </div>
+  </section>
+
+  <CTABand
+    headline={service.data.cta ?? 'Ready to talk?'}
+    subheadline="Book a 30-minute strategy conversation. No pitch, no pressure — just clarity on your next step."
+    ctaHref={service.data.ctaLink ?? '/contact'}
+  />
+</PageLayout>

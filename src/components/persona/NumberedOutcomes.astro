@@ -1,0 +1,32 @@
+---
+export interface Props {
+  heading: string
+  items: ReadonlyArray<{ title: string; description: string }>
+}
+
+const { heading, items } = Astro.props
+---
+
+<section class="border-y border-white/5 bg-surface px-6 py-20">
+  <div class="mx-auto max-w-3xl">
+    <h2 class="text-center font-serif text-3xl text-text-primary md:text-4xl">
+      {heading}
+    </h2>
+
+    <div class="mt-12 space-y-8">
+      {
+        items.map(({ title, description }, index) => (
+          <div class="flex gap-6">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10 text-lg font-medium text-gold">
+              {index + 1}
+            </div>
+            <div>
+              <h3 class="font-serif text-xl text-text-primary">{title}</h3>
+              <p class="mt-2 text-text-muted">{description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

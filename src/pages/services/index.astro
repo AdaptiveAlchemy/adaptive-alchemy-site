@@ -1,0 +1,27 @@
+---
+import CTABand from '@/components/sections/CTABand.astro'
+import ServiceCards from '@/components/sections/ServiceCards.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
+---
+
+<PageLayout
+  title="Services"
+  description="Product and technology strategy advisory, embedded CTO leadership, and agent-first transformation for growth-stage companies and their investors."
+>
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <h1 class="font-serif text-4xl text-text-primary md:text-5xl">
+        What we do
+      </h1>
+      <p class="mt-6 text-lg text-text-muted">
+        From strategic assessment to embedded leadership to agent-first
+        transformation — we meet you where you are and move you where you need
+        to be.
+      </p>
+    </div>
+  </section>
+
+  <ServiceCards />
+
+  <CTABand />
+</PageLayout>

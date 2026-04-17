@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Diagonal construction lines (lower-left to upper-right) -->
+  <g stroke="#F5F0EB" stroke-width="0.7" opacity="0.25">
+    <line x1="0" y1="178" x2="132" y2="0"/>
+    <line x1="18" y1="192" x2="155" y2="5"/>
+    <line x1="48" y1="198" x2="182" y2="8"/>
+    <line x1="78" y1="198" x2="200" y2="30"/>
+  </g>
+
+  <!-- Left leg of A (lighter gray, wide quadrilateral) -->
+  <polygon
+    points="86,24 106,24 78,188 12,188"
+    fill="#B0A8A0"
+    opacity="0.65"
+  />
+
+  <!-- Right leg of A (darker gray, wide quadrilateral) -->
+  <polygon
+    points="94,24 114,24 188,188 122,188"
+    fill="#605850"
+    opacity="0.75"
+  />
+
+  <!-- Alchemy triangle (outlined triangle, apex to mid-body) -->
+  <polygon
+    points="100,28 66,94 134,94"
+    fill="#B0A8A0"
+    fill-opacity="0.15"
+    stroke="#F5F0EB"
+    stroke-width="1"
+    opacity="0.55"
+  />
+
+  <!-- Large circle at apex area -->
+  <circle
+    cx="114" cy="52" r="30"
+    fill="#B0A8A0"
+    fill-opacity="0.08"
+    stroke="#F5F0EB"
+    stroke-width="1"
+    opacity="0.55"
+  />
+
+  <!-- Crossbar capsule (in the gap between legs, left of center) -->
+  <rect
+    x="32" y="130" width="66" height="24" rx="12"
+    fill="#F5F0EB"
+    opacity="0.7"
+  />
+
+  <!-- Small circle on the right -->
+  <circle
+    cx="158" cy="140" r="20"
+    fill="#605850"
+    fill-opacity="0.15"
+    stroke="#F5F0EB"
+    stroke-width="1"
+    opacity="0.55"
+  />
+</svg>

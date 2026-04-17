@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+
+@config "../../tailwind.config.ts";
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('/fonts/inter-variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/dm-serif-display-regular.woff2') format('woff2');
+}
+
+@layer base {
+  :root {
+    font-family:
+      Inter,
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ink, #0a0a0a);
+    color: var(--color-text-primary, #f5f0eb);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

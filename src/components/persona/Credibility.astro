@@ -1,0 +1,28 @@
+---
+export interface Props {
+  heading: string
+  paragraphs: ReadonlyArray<string>
+}
+
+const { heading, paragraphs } = Astro.props
+---
+
+<section class="border-y border-white/5 bg-surface px-6 py-20">
+  <div class="mx-auto max-w-3xl text-center">
+    <h2 class="font-serif text-3xl text-text-primary md:text-4xl">
+      {heading}
+    </h2>
+    {
+      paragraphs.map((text, index) => (
+        <p
+          class:list={[
+            'text-lg leading-relaxed text-text-muted',
+            index === 0 ? 'mt-6' : 'mt-4'
+          ]}
+        >
+          {text}
+        </p>
+      ))
+    }
+  </div>
+</section>

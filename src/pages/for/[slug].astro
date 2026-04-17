@@ -1,0 +1,140 @@
+---
+import { getCollection } from 'astro:content'
+
+import Credibility from '@/components/persona/Credibility.astro'
+import EngagementTiers from '@/components/persona/EngagementTiers.astro'
+import FAQ from '@/components/persona/FAQ.astro'
+import FeatureGrid from '@/components/persona/FeatureGrid.astro'
+import NumberedOutcomes from '@/components/persona/NumberedOutcomes.astro'
+import PainPoints from '@/components/persona/PainPoints.astro'
+import PersonaHero from '@/components/persona/PersonaHero.astro'
+import CTABand from '@/components/sections/CTABand.astro'
+import { SITE_URL } from '@/consts'
+import PageLayout from '@/layouts/PageLayout.astro'
+
+export async function getStaticPaths() {
+  const personas = await getCollection('personas')
+  return personas.map((persona) => ({
+    params: { slug: persona.id.replace(/\.md$/, '') },
+    props: { persona }
+  }))
+}
+
+const { persona } = Astro.props
+const slug = persona.id.replace(/\.md$/, '')
+const {
+  directAnswer,
+  hero,
+  painPoints,
+  featureGrid,
+  numberedOutcomes,
+  engagementTiers,
+  credibility,
+  faq,
+  ctaBand
+} = persona.data
+
+const faqSchema = faq
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer
+        }
+      }))
+    }
+  : null
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE_URL
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Who We Help',
+      item: `${SITE_URL}/for`
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: persona.data.navLabel,
+      item: `${SITE_URL}/for/${slug}`
+    }
+  ]
+}
+
+const speakableSchema = directAnswer
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['.direct-answer']
+      }
+    }
+  : null
+---
+
+<PageLayout title={persona.data.title} description={persona.data.description}>
+  {
+    faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )
+  }
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+  {
+    speakableSchema && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(speakableSchema)}
+      />
+    )
+  }
+
+  <PersonaHero {...hero} />
+
+  {
+    directAnswer && (
+      <section class="px-6 py-12">
+        <div class="mx-auto max-w-3xl">
+          <p class="direct-answer text-lg leading-relaxed text-text-muted">
+            {directAnswer}
+          </p>
+        </div>
+      </section>
+    )
+  }
+
+  {painPoints && <PainPoints {...painPoints} />}
+
+  {featureGrid && <FeatureGrid {...featureGrid} />}
+
+  {numberedOutcomes && <NumberedOutcomes {...numberedOutcomes} />}
+
+  {engagementTiers && <EngagementTiers {...engagementTiers} />}
+
+  {credibility && <Credibility {...credibility} />}
+
+  {faq && <FAQ items={faq} />}
+
+  <CTABand
+    headline={ctaBand.headline}
+    subheadline={ctaBand.subheadline}
+    ctaLabel={ctaBand.ctaLabel}
+    ctaHref={ctaBand.ctaHref}
+  />
+</PageLayout>
