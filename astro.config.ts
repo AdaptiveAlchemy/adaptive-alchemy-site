@@ -7,6 +7,8 @@ const getSiteURL = () => {
   return process.env.SITE_URL || 'https://www.adaptivealchemy.io'
 }
 
+// BASE_PATH is only needed for GitHub Pages sub-path deployments
+// (e.g. adaptivealchemy.github.io/repo-name). A custom domain always uses '/'.
 const getBasePath = () => {
   return process.env.BASE_PATH || '/'
 }
