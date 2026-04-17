@@ -11,7 +11,7 @@ ctaLink: '/contact'
 
 Your board is asking about your AI strategy. Your competitors are shipping AI-powered products. Your engineers are experimenting with copilots. But no one has a coherent plan for how AI fits into your operating model — and the gap between "we are experimenting" and "AI runs our operations" feels impossibly wide.
 
-Most AI consultancies will sell you a pilot. We help you build the organizational capability to transform.
+Most AI engagements end with a pilot report. We stay until AI is running your operations — not just demonstrated in a deck.
 
 ## What makes us different
 
@@ -19,15 +19,15 @@ We build with AI agents every day. Our own operations run on agent-first workflo
 
 That practitioner depth, combined with CTO/CPTO-grade strategic perspective, means we can connect what is technically possible to what is operationally and commercially valuable. We do not just deploy agents. We help you redesign how work gets done — from product discovery to engineering delivery.
 
-Our posture is strategy-first and execution-accountable. We guide the transformation end to end, and when additional implementation capacity is needed, we can bring trusted operators into the workstream under clear standards and governance.
+We guide the transformation end to end. When more implementation capacity is needed, we bring in engineers we have worked with before and stay responsible for the standards and outcomes.
 
-## Enterprise-grade, not vibe-coded
+## Built for production, not just demos
 
-There is a reason executives hesitate to trust AI-generated output in production systems. Too much of what passes for "AI implementation" is fragile, untested, and ungoverned — built fast with no thought for reliability, auditability, or risk management.
+Executives are right to be skeptical of AI output in production systems. Most of what reaches them was built quickly, with no automated testing, no monitoring, and no plan for what happens when it fails.
 
-We take the opposite approach. Every AI system we help design is built with the same rigor as any production system: automated testing, deployment pipelines, monitoring, audit trails, and human-in-the-loop controls where they matter. We understand that in regulated industries, the question is not whether you can deploy AI — it is whether you can demonstrate that your AI systems are governed, auditable, and reliable.
+Every AI system we design is built the way any production system should be: automated testing, deployment pipelines, monitoring, audit trails, and human review where the stakes require it. In regulated industries, that is not optional — it is the bar for being allowed to ship.
 
-Speed and governance are not opposites. Modern engineering practices provide better risk controls than traditional approval committees. We bring that nuance to every engagement.
+Governance does not have to slow things down. Good engineering practices provide better risk controls than approval committees. That is how we approach it.
 
 ## The engagement ladder
 
@@ -39,7 +39,7 @@ You get a clear, honest picture of your starting point — and a prioritized map
 
 ### 2. Design
 
-Co-create the solution. Based on the assessment, we work with your team to design a tailored transformation approach. This is not an off-the-shelf playbook. It is a plan built around your specific constraints, capabilities, and business objectives.
+Work with your team to design the approach. Based on the assessment, we build a plan around your specific constraints, capabilities, and business objectives — not a generic playbook applied to your situation.
 
 The design phase ensures that before any pilot begins, everyone is aligned on what success looks like and how you will measure it.
 
@@ -51,11 +51,11 @@ Every pilot is built to production standards: tested, monitored, and governed. N
 
 ### 4. Transform
 
-Scale what works. With a proven pilot and a co-created design, we systematically extend AI-powered operations across your organization. This includes team upskilling, process redesign, governance frameworks, and the cultural shifts that make transformation stick.
+Extend what worked. With a proven pilot and an agreed design, we systematically roll out AI-powered operations across your organization — including training teams, redesigning processes, building governance controls, and handling the organizational changes that adoption actually requires.
 
 ### 5. Operate
 
-Sustain the advantage. Ongoing fractional leadership to ensure continuous optimization, adaptation to new capabilities, and strategic alignment as the AI landscape evolves.
+Keep it running. Ongoing fractional leadership to ensure continuous improvement, adaptation as AI capabilities evolve, and alignment with the business as priorities shift.
 
 ## Who this is for
 

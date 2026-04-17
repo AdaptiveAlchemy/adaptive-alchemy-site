@@ -4,12 +4,12 @@ description: 'Get a credible AI strategy your board can stand behind. Adaptive A
 order: 2
 navLabel: 'For CEOs & Boards'
 
-directAnswer: 'Adaptive Alchemy provides non-technical executive teams with a credible AI strategy their board can stand behind. We assess your competitive position, identify high-confidence AI use cases, build a governance framework, and deliver a phased roadmap with quick wins achievable within 90 days, giving leadership the clarity and confidence to invest in AI wisely.'
+directAnswer: 'Adaptive Alchemy helps non-technical executive teams build an AI strategy their board can stand behind. We assess your competitive position, identify high-confidence AI use cases, design governance controls, and deliver a phased roadmap with early wins within 90 days — giving leadership a concrete plan rather than a vision document.'
 
 hero:
   eyebrow: 'For CEOs & Board Members'
   headline: 'Your board is asking about AI. Do you have a credible answer?'
-  subheadline: 'The question is no longer whether to invest in AI. It is how to invest wisely, govern effectively, and move faster than competitors without taking on unacceptable risk. We help executive teams build an AI strategy that is honest, defensible, and actionable.'
+  subheadline: 'The question is no longer whether to invest in AI. It is how to invest in the right things, govern what you deploy, and build a position your board can actually stand behind. We help executive teams develop an AI strategy they can execute and defend.'
   primaryCta:
     label: 'Book a Strategy Session'
     href: '/contact'
@@ -21,13 +21,13 @@ painPoints:
   heading: 'The questions keeping executive teams up at night.'
   items:
     - quote: 'Our competitors just announced an AI initiative. We have nothing to show the board.'
-      label: 'The competitive pressure'
+      label: 'Nothing to show the board'
     - quote: 'We have spent on AI but cannot point to measurable business outcomes.'
-      label: 'The ROI gap'
+      label: 'Spending on AI without measurable outcomes'
     - quote: 'I do not know if our technology team has the capability to execute an AI strategy.'
-      label: 'The talent uncertainty'
+      label: 'Not sure the team can actually deliver'
     - quote: 'What is our liability exposure if AI makes a decision that goes wrong?'
-      label: 'The governance question'
+      label: 'What happens if AI makes a wrong call'
 
 featureGrid:
   heading: 'What we deliver to executive teams.'
@@ -35,26 +35,26 @@ featureGrid:
   items:
     - title: 'AI Strategy in Board Language'
       description: 'A clear, jargon-free strategy document that connects AI investment to business outcomes. Built for board presentation, not for engineers.'
-    - title: 'Governance Framework'
-      description: 'Risk management, compliance posture, and oversight mechanisms that satisfy fiduciary obligations and regulatory requirements.'
+    - title: 'Governance Design'
+      description: 'Risk management, compliance requirements, and oversight mechanisms that meet board and regulatory expectations without creating bureaucracy that slows teams down.'
     - title: 'Competitive Landscape'
       description: 'Where you stand relative to competitors and industry peers on AI adoption. Honest assessment, not hype.'
     - title: 'Investment Roadmap'
       description: 'Phased plan with clear milestones, budget ranges, and decision gates. Know what to fund, when to pause, and how to measure.'
     - title: 'Talent Assessment'
       description: 'Honest evaluation of your team capabilities and a realistic plan to close gaps — through hiring, upskilling, or fractional leadership.'
-    - title: 'Quick Wins Identification'
-      description: 'High-confidence, low-risk AI applications that can demonstrate value within 90 days and build organizational momentum.'
+    - title: 'Early Wins'
+      description: 'High-confidence AI applications that can show measurable results within 90 days — building internal confidence before the larger strategic bets.'
 
 numberedOutcomes:
   heading: 'Outcomes that matter at the executive level.'
   items:
-    - title: 'Competitive advantage, not competitive anxiety'
-      description: 'Move from reactive ("what are competitors doing?") to proactive ("here is our differentiated position"). A strategy your leadership team can articulate with confidence.'
+    - title: 'A position to articulate, not just react from'
+      description: 'Stop responding to what competitors announced. Build a clear AI strategy your leadership team can explain with confidence — and that holds up when the board asks hard questions.'
     - title: 'Board-ready governance'
-      description: 'Frameworks that satisfy fiduciary obligations, address regulatory requirements, and give the board confidence that AI adoption is being managed responsibly.'
-    - title: 'Measurable ROI within 90 days'
-      description: 'We identify and execute quick wins that demonstrate business value fast — before the big strategic bets require justification.'
+      description: 'Oversight structures that meet regulatory requirements and give the board confidence that AI adoption is being managed responsibly, without creating drag for the teams doing the work.'
+    - title: 'Measurable results within 90 days'
+      description: 'We identify and execute early wins that demonstrate business value before the larger strategic bets require justification.'
     - title: 'Reduced dependency on any single vendor'
       description: 'Open, model-agnostic architecture that protects your optionality. No lock-in to a single AI provider or platform.'
 
@@ -72,10 +72,10 @@ engagementTiers:
       description: 'Regular strategic counsel to the CEO or board on technology decisions, AI investments, and governance. A trusted advisor who brings pattern recognition from across industries and company stages.'
 
 credibility:
-  heading: 'Strategic depth. Not slideware.'
+  heading: 'We have been in these rooms.'
   paragraphs:
-    - 'We have sat in the boardroom, the product review, and the engineering war room. We know what boards need to hear because we have presented to them. We know what product and engineering teams need to deliver because we have led both. That perspective across the full product-to-technology stack is what makes our advice actionable, not theoretical.'
-    - 'Twenty years of pattern recognition across startups, scale-ups, and Fortune 50 companies. We have seen what works and what does not — at every stage.'
+    - 'We have presented AI strategy to skeptical boards and delivered it alongside engineering teams. We understand what boards need to see because we have sat on both sides of that conversation — the executive presenting, and the advisor helping them prepare. That perspective is what makes the advice usable, not just correct.'
+    - 'We have worked across startups, scale-ups, and Fortune 50 companies. The patterns that separate successful AI investments from expensive experiments are consistent across all of them.'
 
 faq:
   - question: 'What should an AI strategy for a mid-market company include?'

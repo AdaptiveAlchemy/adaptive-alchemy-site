@@ -4,12 +4,12 @@ description: 'A senior product and technology advisor in your corner. Adaptive A
 order: 3
 navLabel: 'For Founders'
 
-directAnswer: 'A fractional CTO from Adaptive Alchemy gives founders senior product and technology leadership without the full-time executive cost. We help with product strategy, architecture decisions, engineering hiring, investor due diligence preparation, and roadmap prioritization — providing the combined product and technology judgment that growth-stage startups need during their most consequential decisions.'
+directAnswer: 'A fractional CTO from Adaptive Alchemy gives founders senior product and technology leadership without the full-time executive cost. We help with product strategy, architecture decisions, engineering hiring, investor due diligence preparation, and roadmap prioritization — the decisions that compound, where having an experienced senior partner makes a real difference.'
 
 hero:
   eyebrow: 'For Founders'
   headline: 'Every founder needs a senior product and technology advisor they trust. Most cannot afford one full-time.'
-  subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who leads both product strategy and engineering execution — not a slide deck from a consulting firm.'
+  subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who has made these decisions before — someone with skin in the outcome, not just a report to hand over.'
   primaryCta:
     label: 'Book an Intro Call'
     href: '/contact'
@@ -50,19 +50,19 @@ numberedOutcomes:
   heading: 'What changes when you have an advisor.'
   items:
     - title: 'Faster, better decisions'
-      description: 'Stop deliberating alone. Pressure-test your product and technology thinking with someone who has made these decisions before — at companies that grew from seed to exit.'
+      description: 'Stop working through hard calls alone. Think them through with someone who has made them before — at companies across every stage from seed to exit.'
     - title: 'Technical credibility with investors'
-      description: 'Walk into investor meetings with a technology narrative that is honest, compelling, and defensible. No hand-waving.'
+      description: 'Walk into investor meetings with a technology narrative you can actually defend. Specific, honest, and built to hold up under real diligence questions.'
     - title: 'Stronger technical hires'
       description: 'Hire the right people the first time. An advisor who knows what great engineering talent looks like helps you avoid the expensive mis-hires.'
     - title: 'Confidence in your direction'
       description: 'Know that your product strategy, architecture, team, and roadmap are sound — not because someone told you what you wanted to hear, but because a senior practitioner validated it.'
 
 credibility:
-  heading: 'We have led product and technology. We have been the founder.'
+  heading: 'We have been where you are.'
   paragraphs:
-    - 'We have built product and technology organizations from scratch, scaled them through fundraising rounds, and prepared them for acquisition. We know the founder journey because we have lived it — the loneliness of the product and technology decisions, the pressure of investor conversations, the cost of getting it wrong.'
-    - 'This is not consulting. It is having a senior partner in your corner who is invested in your success.'
+    - 'We have built product and technology organizations from scratch, navigated fundraising rounds, and prepared companies for acquisition. We know what the hard parts of the founder journey actually feel like — the decisions you cannot discuss with your team, the investor conversations where you are not sure what they are really asking, the cost of a wrong call you did not see coming.'
+    - 'That experience is what makes this different from a consulting engagement. We are invested in your outcome, not just your next deliverable.'
 
 faq:
   - question: 'What does a fractional CTO do for a startup?'

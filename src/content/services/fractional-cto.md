@@ -11,13 +11,13 @@ ctaLink: '/contact'
 
 You need a senior leader who can own both product strategy and technology execution, but the timing, budget, or stage does not justify full-time executive hires. Meanwhile, your engineers need strategic direction, your board needs confidence in both what you are building and how, and nobody is connecting product decisions to technology reality.
 
-Advisors write recommendations. We embed as your CTO/CPTO (Chief Product and Technology Officer) — making decisions, building team capability, connecting product and technology choices to business outcomes, and staying accountable for execution. One senior leader who owns both what you build and how you build it.
+Advisors write recommendations. We work as your CTO/CPTO (Chief Product and Technology Officer) — making decisions, building team capability, connecting product and technology choices to business outcomes, and staying accountable for execution. One leader across product and engineering, rather than two roles that need constant coordination.
 
 ## What you get
 
 Embedded product and technology leadership that functions as part of your team:
 
-We lead with strategic direction and decision quality, then stay accountable through execution. When specialized build capacity is required, we can mobilize trusted operators without turning the engagement into a staffing model.
+We lead with strategy and stay accountable through execution. When more engineering capacity is needed, we bring in people we know and trust — and stay responsible for what they deliver.
 
 - **Product strategy and roadmap ownership** — Feature prioritization, product-market fit validation, roadmap decisions grounded in both customer needs and technical reality
 - **Technology strategy and architecture** — Architecture decisions, build-vs-buy, vendor selection, technology roadmap
@@ -47,11 +47,9 @@ Incremental migration strategies that maintain business continuity while escapin
 
 Hire and onboard engineering talent that fits your culture and velocity. Role design, hiring process, candidate evaluation, and onboarding programs that get new engineers productive in weeks, not months.
 
-## Enterprise-grade practices
+## Speed with rigor
 
-We do not just move fast. We move fast with rigor. That means automated quality gates, comprehensive test coverage, deployment pipelines with rollback capability, audit trails, and governance frameworks that satisfy compliance teams without destroying velocity.
-
-This is the nuance most firms miss: speed and control are not opposites. Modern engineering practices — continuous integration, progressive delivery, automated security scanning — provide better risk controls than traditional approval committees. We bring that understanding to every engagement.
+Automated quality gates, test coverage, deployment pipelines with rollback capability, audit trails — these are what let teams move fast reliably, not slowly safely. Good engineering practices provide better risk controls than approval processes. We build that way from day one.
 
 ## Who this is for
 

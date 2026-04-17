@@ -4,7 +4,7 @@ description: 'Your AI initiative stalled. We diagnose what went wrong, fix the a
 order: 5
 navLabel: 'For Stalled AI Projects'
 
-directAnswer: 'When your AI initiative stalls, Adaptive Alchemy diagnoses the root cause — whether data quality, use case selection, engineering execution, or organizational alignment — and builds a credible restart plan. We get AI projects from failed proof of concept to production deployment with quick wins in the first 60 days that rebuild stakeholder confidence.'
+directAnswer: 'When your AI initiative stalls, Adaptive Alchemy diagnoses what actually went wrong — whether data quality, use case selection, engineering execution, or organizational structure — and builds a realistic restart plan. We get AI projects from failed proof of concept to production deployment, with concrete progress in the first 60 days that rebuilds internal confidence.'
 
 hero:
   eyebrow: 'For Stalled AI Projects'
@@ -26,9 +26,9 @@ painPoints:
     - quote: 'We hired an AI team but they are building interesting technology that is not connected to business outcomes.'
       label: 'The science project'
     - quote: 'Our vendor delivered a model, but nobody in the organization knows how to integrate, monitor, or maintain it.'
-      label: 'The handoff gap'
+      label: 'No one knows how to run what was delivered'
     - quote: 'Leadership lost confidence after the first attempt. Now nobody wants to sponsor the next one.'
-      label: 'The credibility deficit'
+      label: 'Nobody wants to sponsor the next attempt'
 
 featureGrid:
   heading: 'How we diagnose and fix stalled AI projects.'
@@ -51,9 +51,9 @@ numberedOutcomes:
   heading: 'From stalled to production.'
   items:
     - title: 'Clear understanding of what went wrong'
-      description: 'An honest, jargon-free diagnosis that leadership can understand. Not finger-pointing — root causes and a path forward.'
-    - title: 'A credible restart plan'
-      description: 'Phased approach with quick wins in the first 30-60 days. Rebuild confidence through demonstrated progress, not promises.'
+      description: 'A diagnosis leadership can read and act on. Not finger-pointing — actual root causes, explained plainly, with a path forward.'
+    - title: 'A realistic restart plan'
+      description: 'Phased approach with concrete progress in the first 30-60 days. Confidence comes from results, not from another roadmap presentation.'
     - title: 'AI in production, not just in demo'
       description: 'The goal is AI that runs real business processes reliably — with monitoring, governance, and measurable business impact.'
     - title: 'Internal capability that outlasts our engagement'

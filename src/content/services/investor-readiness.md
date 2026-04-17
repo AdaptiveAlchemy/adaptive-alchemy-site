@@ -11,14 +11,14 @@ ctaLink: '/contact'
 
 Fundraising and M&A processes expose product and technology organizations to intense scrutiny. Investors and acquirers ask detailed questions about product-market fit, architecture, scalability, security posture, team capability, and technical debt. Most companies are not prepared for these conversations.
 
-The result: rounds take longer, valuations get discounted, and deals fall through — not because the product or technology is bad, but because the story was not told well.
+The result: rounds take longer, valuations get discounted, and deals fall through. Often the product and technology are genuinely strong — but reviewers cannot see it clearly in the documentation they are given.
 
 ## What you get
 
-End-to-end preparation that builds both the substance and the narrative:
+Preparation that covers both what is true about your product and technology, and how to communicate it clearly:
 
 - **Product and technical capability audit** — Establish a credible baseline across product strategy and technology before external scrutiny begins
-- **Architecture documentation** — Clear, investor-grade technical documentation that stands up to diligence
+- **Architecture documentation** — Technical documentation clear enough to satisfy investor and acquirer scrutiny
 - **Scalability validation and capacity planning** — Proof that the platform handles growth, not just promises
 - **Traction metrics dashboard** — The numbers that demonstrate product and technology-enabled business momentum
 - **Team assessment and scaling plan** — Post-transaction talent strategy across product and engineering that shows you have thought ahead
@@ -27,11 +27,11 @@ End-to-end preparation that builds both the substance and the narrative:
 - **Board presentation development** — Product and technology strategy communicated in language the board understands
 - **Real-time advisory** — Support during live investor or acquirer conversations
 
-## Enterprise-grade credibility
+## Ready for serious scrutiny
 
-Due diligence teams look for red flags: undocumented architecture, missing audit trails, unclear governance, ad-hoc security practices. We ensure your technology organization presents with the rigor that institutional investors expect.
+Due diligence teams look for red flags: undocumented architecture, missing audit trails, unclear governance, ad-hoc security practices. We prepare organizations to present with the rigor that institutional investors expect.
 
-This is not about window-dressing. It is about ensuring your actual practices — testing, deployment, monitoring, incident response — are documented, defensible, and demonstrably effective.
+The goal is not to make things look better than they are. It is to make sure that what is good is actually visible — that your testing, deployment, monitoring, and incident response practices are documented clearly enough that reviewers can assess them rather than guess at them.
 
 ## Who this is for
 

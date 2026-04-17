@@ -4,12 +4,12 @@ description: 'Turn AI readiness into a value creation lever. Adaptive Alchemy he
 order: 1
 navLabel: 'For PE/VC'
 
-directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners assess AI readiness across portfolio companies. We evaluate each company's data infrastructure, AI strategy, technology stack, and governance posture, then deliver a prioritized investment plan that ties AI-enabled operational efficiency to measurable EBITDA improvement and a stronger exit narrative."
+directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners assess AI readiness across portfolio companies. We evaluate each company's data infrastructure, AI strategy, technology stack, and governance controls, then deliver a prioritized investment plan that connects AI capability to measurable business outcomes and a stronger position at exit."
 
 hero:
   eyebrow: 'For PE/VC Funds & Operating Partners'
-  headline: 'AI readiness is a value creation lever. Are your portfolio companies ready?'
-  subheadline: 'Most portfolio companies have no coherent AI strategy. That is not a technology gap — it is a valuation risk. We help funds turn AI-enabled operational efficiency into measurable EBITDA improvement and a stronger exit narrative.'
+  headline: 'Most portfolio companies have no AI strategy worth defending. That is a valuation risk.'
+  subheadline: 'Most portfolio companies are running AI experiments with no coordination and nothing shipping. That is not a technology problem — it is a leadership and prioritization problem. We help funds turn scattered AI activity into documented capability that buyers actually value.'
   primaryCta:
     label: 'Schedule a Portfolio Review'
     href: '/contact'
@@ -22,13 +22,13 @@ painPoints:
   subheading: 'Operating partners see these patterns across the portfolio:'
   items:
     - quote: 'Our portfolio companies are running scattered AI experiments with no coordination and no measurable outcomes.'
-      label: 'The scattered experiments problem'
+      label: 'No coordination across the portfolio'
     - quote: "Buyers are asking about AI capabilities in diligence. We don't have a compelling answer."
-      label: 'The exit narrative gap'
+      label: 'Nothing compelling when buyers ask about AI'
     - quote: 'We mandated AI in the 100-day plan. Six months later, nothing has shipped.'
-      label: 'The execution gap'
+      label: 'Six months in and nothing shipped'
     - quote: "Each company is hiring their own AI team. It's expensive and inconsistent."
-      label: 'The duplication problem'
+      label: 'Every company building the same capability separately'
 
 featureGrid:
   heading: 'What we assess across your portfolio.'
@@ -48,16 +48,16 @@ featureGrid:
       description: 'Is AI embedded in workflows or siloed as experiments? Production deployments, workflow integration, business metric impact.'
 
 numberedOutcomes:
-  heading: 'AI-enabled value creation. Measurable, not theoretical.'
+  heading: 'What this actually produces.'
   items:
-    - title: 'EBITDA improvement through operational efficiency'
-      description: 'AI-powered operations that reduce cost per transaction, automate back-office functions, and scale without proportional headcount growth.'
-    - title: 'Multiple expansion at exit'
-      description: 'AI-ready companies command premium valuations. We build the technology narrative and evidence that strategic buyers and next-round investors want to see.'
-    - title: 'Portfolio-wide consistency'
-      description: 'A repeatable assessment and implementation playbook that can be deployed across multiple portfolio companies — faster time-to-value, lower cost per company.'
-    - title: 'Exit-ready technology narrative'
-      description: 'Investor-grade documentation, defensible architecture, and a credible AI roadmap that answers every diligence question before it is asked.'
+    - title: 'Operational outcomes that show in the numbers'
+      description: 'AI-powered operations that reduce cost per transaction, automate back-office functions, and let companies scale without proportional headcount growth.'
+    - title: 'A stronger position at exit'
+      description: 'AI-capable companies attract better valuations. We build the documentation and evidence that strategic buyers and next-round investors want to see — before they ask for it.'
+    - title: 'Consistency across the portfolio'
+      description: 'A repeatable assessment and implementation process that can be applied across multiple companies — with faster results and lower cost each time.'
+    - title: 'No diligence surprises'
+      description: 'Architecture documentation, governance evidence, and a clear AI roadmap ready before due diligence begins — so the process accelerates rather than stalls.'
 
 engagementTiers:
   heading: 'How we work with funds.'
@@ -73,10 +73,10 @@ engagementTiers:
       description: 'Whether you are acquiring or exiting, we prepare the technology organization for institutional scrutiny. Architecture documentation, scalability validation, governance evidence, and a compelling technology narrative for buyers.'
 
 credibility:
-  heading: 'Enterprise-grade execution. Not innovation theater.'
+  heading: 'We have been on both sides of the diligence table.'
   paragraphs:
-    - 'We bring 20+ years of pattern recognition across startups, scale-ups, and Fortune 50 companies. We have built, scaled, and fixed product and technology organizations at every stage. We know what institutional investors expect because we have been on both sides of the diligence table.'
-    - 'Smart governance that enables velocity. Not compliance theater that slows everyone down.'
+    - 'We have built and scaled product and technology organizations at companies that went through institutional diligence — as operators, not consultants. We know what acquirers and next-round investors scrutinize because we have prepared companies for those conversations and sat across the table from the people asking the questions.'
+    - 'We build governance that actually works at the pace of a growth-stage company — not compliance frameworks designed for enterprises with dedicated risk teams.'
 
 faq:
   - question: 'What is an AI readiness assessment for portfolio companies?'

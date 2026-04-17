@@ -9,13 +9,13 @@ ctaLink: '/contact'
 
 ## The problem
 
-The jump from senior engineer or engineering manager to CTO is one of the hardest transitions in technology. The skills that got you here — technical depth, individual contribution, hands-on problem solving — are not the skills that make a great technology executive.
+The jump from senior engineer or engineering manager to CTO is one of the hardest transitions in technology. The skills that got you here — technical depth, hands-on problem solving, good judgment on hard problems — remain valuable. But the job changes fundamentally when you become responsible for what an entire organization produces, not just what you personally build.
 
-Suddenly you are responsible for board communication, product strategy alignment, hiring strategy, vendor negotiation, budget management, organizational design, and strategic planning. And increasingly, the role demands you own product direction alongside technology execution. There is no one in the room who has done this before to tell you what they wish they had known.
+Suddenly you are responsible for board communication, product strategy, hiring, vendor decisions, budget, organizational design, and increasingly, product direction alongside technology execution. Most people who have made this transition will tell you the hardest parts were the ones nobody warned them about.
 
 ## What you get
 
-A confidential, one-on-one partnership with a product and technology executive who has 20+ years of pattern recognition:
+A confidential, one-on-one working relationship with a product and technology executive who has held the roles you are navigating:
 
 - **Product and technology strategy** — Roadmap prioritization, product-market fit, architecture choices, build-vs-buy trade-offs
 - **Board communication coaching** — How to present product and technology strategy so that boards understand and trust it

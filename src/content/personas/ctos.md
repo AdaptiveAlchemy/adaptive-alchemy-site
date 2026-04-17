@@ -4,7 +4,7 @@ description: 'Whether you just stepped into the CTO seat or your org is outgrowi
 order: 4
 navLabel: 'For CTOs'
 
-directAnswer: 'Adaptive Alchemy provides senior advisory for first-time and scaling CTOs and engineering leaders. We serve as a confidential sounding board for your hardest decisions: product strategy, architecture, org design, AI strategy, board communication, and team scaling. Practitioner-led, not framework-driven, our support accelerates your growth as a product and technology executive.'
+directAnswer: 'Adaptive Alchemy provides senior advisory for first-time and scaling CTOs and engineering leaders. We serve as a confidential sounding board for your hardest decisions: product strategy, architecture, org design, AI strategy, board communication, and team scaling. Our advisors have held these roles — the guidance comes from experience, not frameworks.'
 
 hero:
   eyebrow: 'For CTOs & Engineering Leaders'
@@ -32,7 +32,7 @@ painPoints:
 
 featureGrid:
   heading: 'What senior CTO support looks like.'
-  subheading: 'Practical, confidential, and tailored to where you are.'
+  subheading: 'Practical and confidential, shaped around where you actually are.'
   items:
     - title: 'Strategic Sounding Board'
       description: 'Regular sessions to work through your hardest decisions. Product strategy, architecture, org design, vendor selection, board communication — with someone who has faced these decisions before.'
@@ -43,7 +43,7 @@ featureGrid:
     - title: 'Board & Stakeholder Communication'
       description: 'Help translating product and technology reality into business language. Board presentations, executive updates, and investor conversations that build confidence.'
     - title: 'Product-Engineering Alignment'
-      description: 'Navigate the increasingly common expectation that CTOs own product direction alongside technology execution. Frameworks for leading both without becoming a bottleneck.'
+      description: 'Navigate the increasingly common expectation that CTOs own product direction alongside technology execution. How to lead both without everything routing through you.'
     - title: 'AI Strategy Development'
       description: 'Navigate the AI landscape with someone who builds AI systems, not just talks about them. Practical guidance on where AI creates real value for your specific business.'
     - title: 'Leadership Development'
@@ -53,19 +53,19 @@ numberedOutcomes:
   heading: 'What changes with senior support.'
   items:
     - title: 'Better decisions, faster'
-      description: 'Stop second-guessing yourself on high-stakes calls. Pressure-test your thinking with someone who has made these decisions across dozens of companies and stages.'
+      description: 'Stop second-guessing yourself on high-stakes calls. Work through your thinking with someone who has navigated these decisions across dozens of companies and stages.'
     - title: 'Stronger executive presence'
-      description: 'Communicate technical strategy in language that boards and investors understand. Build the credibility that comes from clarity and confidence.'
+      description: 'Communicate technical strategy in language boards and investors actually understand. The credibility comes from clarity, not from title.'
     - title: 'A scalable engineering organization'
-      description: 'Move from heroics to systems. Build the team structure, processes, and culture that scale — so you are not the bottleneck.'
+      description: 'Build the team structure, processes, and culture that outlast you. So the org runs well even when you are not in every decision.'
     - title: 'Confidential, honest feedback'
       description: 'Get the truth about what is working and what is not. No politics, no agenda — just an experienced peer who is invested in your success.'
 
 credibility:
   heading: 'We have held the seat you are in.'
   paragraphs:
-    - 'We have been the first-time CTO who did not know what they did not know. We have been the scaling CTO who could not keep up. We have been the CTO presenting to a skeptical board — and the one asked to own product strategy on top of everything else. We bring that lived experience — not theories about leadership, but patterns from decades of practice across both product and technology.'
-    - 'Every CTO engagement is confidential. Your challenges stay between us.'
+    - 'We have been the first-time CTO who did not know what they did not know. We have been the scaling CTO whose org grew faster than their capacity to lead it. We have been the CTO asked to own product strategy on top of an already full plate. These are not hypothetical situations we advise on — they are situations we have navigated.'
+    - 'Every engagement is confidential. What you share stays between us.'
 
 faq:
   - question: 'What is CTO coaching and how does it differ from executive coaching?'

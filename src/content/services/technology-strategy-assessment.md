@@ -9,9 +9,9 @@ ctaLink: '/contact'
 
 ## The problem
 
-Most technology organizations cannot objectively assess themselves. Internal teams are too close to the codebase. External auditors produce slide decks that gather dust. And boards are left guessing whether the technology is an asset or a liability.
+Most technology organizations cannot objectively assess themselves. Internal teams are too close to the codebase to see the structural problems clearly. External auditors often evaluate only one side — architecture or product — and deliver a report that nobody acts on. Boards are left guessing whether the technology is an asset or a liability.
 
-You need an assessment that is rigorous, independent, and actionable — conducted by someone who has led both product and technology, not just someone who consults on one side of the house.
+You need an assessment from someone who has actually led both product and technology — not an auditor who knows one side and guesses at the other.
 
 ## What you get
 
@@ -29,13 +29,11 @@ A structured, evidence-based evaluation across the dimensions that matter:
 
 Every finding comes with evidence. Every recommendation comes with a rationale. No hand-waving.
 
-## Enterprise-grade rigor
+## Built to withstand scrutiny
 
-Our assessments are built for scrutiny. Every finding is documented with evidence trails, risk classifications, and clear remediation paths. Whether the audience is your board, your investors, or a due diligence team — the work holds up.
+Every finding is documented with evidence and a clear rationale — not a list of opinions, but a defensible record you can hand to a board or a due diligence team. We have operated inside governance and compliance constraints at scale, so we know how to make the work hold up to that kind of review.
 
-We understand governance, auditability, and regulatory context because we have operated inside those constraints at scale. The result is an assessment your compliance team trusts and your engineering team respects.
-
-We are strategy-first, but not strategy-only. If implementation capacity is needed after the assessment, we can stay involved to guide delivery and help mobilize trusted operators.
+If implementation support is needed after the assessment, we can stay involved to guide delivery.
 
 ## Who this is for
 
