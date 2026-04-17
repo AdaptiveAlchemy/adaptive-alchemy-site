@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content'
 import CTABand from '@/components/sections/CTABand.astro'
 import { SITE_URL } from '@/consts'
 import PageLayout from '@/layouts/PageLayout.astro'
+import { jsonLd } from '@/utils/json-ld'
 
 export async function getStaticPaths() {
   const services = await getCollection('services')
@@ -66,10 +67,15 @@ const breadcrumbSchema = {
 ---
 
 <PageLayout title={service.data.title} description={service.data.description}>
-  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script
+    is:inline
     type="application/ld+json"
-    set:html={JSON.stringify(breadcrumbSchema)}
+    set:html={jsonLd(serviceSchema)}
+  />
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={jsonLd(breadcrumbSchema)}
   />
   <section class="px-6 py-24">
     <div class="mx-auto max-w-3xl">

@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero.astro'
 import ServiceCards from '@/components/sections/ServiceCards.astro'
 import { SITE_TITLE, SITE_URL } from '@/consts'
 import PageLayout from '@/layouts/PageLayout.astro'
+import { jsonLd } from '@/utils/json-ld'
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -23,7 +24,11 @@ const websiteSchema = {
   title={SITE_TITLE}
   description="Adaptive Alchemy: fractional CTO services, product and technology strategy consulting, and technical due diligence for growth-stage companies and PE/VC funds. Senior product and technology leadership, on demand."
 >
-  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={jsonLd(websiteSchema)}
+  />
   <Hero />
 
   <!-- Problem statements — in the buyer's voice -->

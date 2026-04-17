@@ -2,6 +2,7 @@
 import CTABand from '@/components/sections/CTABand.astro'
 import { SITE_URL } from '@/consts'
 import PageLayout from '@/layouts/PageLayout.astro'
+import { jsonLd } from '@/utils/json-ld'
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -35,8 +36,9 @@ const organizationSchema = {
   description="Adaptive Alchemy is a collective of senior product and technology strategists who embed in your organization to solve product strategy, architecture, velocity, and AI transformation challenges."
 >
   <script
+    is:inline
     type="application/ld+json"
-    set:html={JSON.stringify(organizationSchema)}
+    set:html={jsonLd(organizationSchema)}
   />
   <section class="px-6 py-24">
     <div class="mx-auto max-w-3xl">
