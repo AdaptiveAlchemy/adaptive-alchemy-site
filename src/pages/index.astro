@@ -8,14 +8,25 @@ import { jsonLd } from '@/utils/json-ld'
 
 const websiteSchema = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
+  '@type': 'Organization',
   name: 'Adaptive Alchemy',
   url: SITE_URL,
   description:
     'Product and technology strategy leadership for growth-stage companies and their investors.',
-  publisher: {
-    '@type': 'Organization',
-    name: 'Adaptive Alchemy'
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '30 N Gould St #24790',
+    addressLocality: 'Sheridan',
+    addressRegion: 'WY',
+    postalCode: '82801',
+    addressCountry: 'US'
+  },
+  telephone: '+1-307-454-0093',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    telephone: '+1-307-454-0093',
+    email: 'inquiries@adaptivealchemy.io'
   }
 }
 ---

@@ -2,6 +2,9 @@
 import { SITE_TITLE } from '@/consts'
 
 const currentYear = new Date().getFullYear()
+const businessAddress = '30 N Gould St #24790, Sheridan, WY 82801'
+const businessPhoneDisplay = '(307) 454-0093'
+const businessPhoneHref = 'tel:+13074540093'
 
 const serviceLinks = [
   {
@@ -118,6 +121,31 @@ const personaLinks = [
             ))
           }
         </ul>
+
+        <h3
+          class="mb-4 mt-8 text-sm font-medium uppercase tracking-wide text-gold"
+        >
+          Contact
+        </h3>
+        <address class="space-y-3 text-sm not-italic text-text-muted">
+          <p>{businessAddress}</p>
+          <p>
+            <a
+              href={businessPhoneHref}
+              class="transition-colors duration-200 hover:text-text-primary"
+            >
+              {businessPhoneDisplay}
+            </a>
+          </p>
+          <p>
+            <a
+              href="mailto:inquiries@adaptivealchemy.io"
+              class="transition-colors duration-200 hover:text-text-primary"
+            >
+              inquiries@adaptivealchemy.io
+            </a>
+          </p>
+        </address>
       </div>
     </div>
 
