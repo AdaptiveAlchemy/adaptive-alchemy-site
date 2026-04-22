@@ -4,14 +4,14 @@ description: 'A senior product and technology advisor in your corner. Adaptive A
 order: 3
 navLabel: 'For Founders'
 
-directAnswer: 'A fractional CTO from Adaptive Alchemy gives founders senior product and technology leadership without the full-time executive cost. We help with product strategy, architecture decisions, engineering hiring, investor due diligence preparation, and roadmap prioritization — the decisions that compound, where having an experienced senior partner makes a real difference.'
+directAnswer: "Adaptive Alchemy's fractional CTO service gives founders senior product and technology leadership on a part-time basis, without the full-time executive cost or equity dilution of a premature senior hire. We help with architecture decisions, engineering team hiring, roadmap prioritization, and investor due diligence preparation — including a technical due diligence package structured for how institutional investors read it, not just how founders present it. Founders typically engage us before a funding round and retain us through the diligence process."
 
 hero:
   eyebrow: 'For Founders'
-  headline: 'Every founder needs a seasoned product and technology advisor they trust. Most cannot afford one full-time.'
-  subheadline: 'You are making product and technology decisions that will compound for years. What to build, how to build it, who to hire, how to talk to investors about your roadmap. You need a seasoned advisor who has made these decisions before. Someone with skin in the outcome, not just a report to hand over.'
+  headline: 'Most founders do not have the runway to architect their technology twice. The decisions you make in the next twelve months will compound for years.'
+  subheadline: 'What you build now, and how you build it, determines what your next investor sees in diligence. We work with founders who are past their first version and need a senior technical partner who can pressure-test architecture, prepare a credible technology narrative for fundraising, and stay accountable through the decisions that do not have obvious right answers.'
   primaryCta:
-    label: 'Book an Intro Call'
+    label: 'Book a 30-Minute Advisory Call'
     href: '/contact'
   secondaryCta:
     label: 'See How We Work'
@@ -70,7 +70,9 @@ faq:
   - question: 'When should a startup hire a fractional CTO instead of a full-time CTO?'
     answer: 'Consider a fractional CTO when you need senior technical judgment but cannot justify or afford a full-time executive, typically pre-Series B. A fractional CTO is ideal when you are making foundational architecture choices, preparing for fundraising, hiring your first engineering team, or evaluating technical direction. Once engineering reaches 15 to 20 people, most companies benefit from a full-time CTO.'
   - question: 'How does a fractional CTO help with fundraising and investor due diligence?'
-    answer: 'A fractional CTO prepares your technology narrative for investor scrutiny: architecture documentation, scalability evidence, security posture, and a credible technical roadmap. During due diligence, they field technical questions from investor teams with confidence and authority. This is particularly valuable for non-technical founders who need credibility in technical conversations with investors.'
+    answer: 'A fractional CTO adds value across three phases of a fundraising process. In preparation — typically 60 to 90 days before a round — they help document the technology architecture, identify and address the gaps most likely to surface in diligence, and build the technical narrative in language institutional investors understand. During active diligence, they field technical questions from investor teams with credibility and authority, translating complex architectural decisions into business risk language that non-technical partners can evaluate. After term sheet, they help address any conditions or concerns raised during diligence before close, reducing re-trade risk. For non-technical founders, this is particularly valuable: investor technical questions often have correct answers that require a senior practitioner to give them — the wrong answer does not just delay the process, it changes the terms or kills the deal.'
+  - question: 'What should a startup''s technical due diligence package include for Series A or Series B investors?'
+    answer: 'A Series A or Series B technical due diligence package typically covers four areas: architecture documentation (system design, data flows, key dependencies, and a candid assessment of technical debt), scalability evidence (how the system performs under current load and what the path to 10x scale looks like), security and compliance posture (access controls, data handling, and any known vulnerabilities), and a credible technology roadmap (what gets built next, why, and by whom). Institutional investors at these stages are evaluating whether the technology is a foundation or a liability, and whether the team can execute the roadmap they are presenting. A package that anticipates the questions — rather than answering only what was asked — signals the kind of organizational maturity investors are looking for. We structure due diligence packages for how institutional investors read them, not just how founders present them.'
   - question: 'How much does a fractional CTO engagement cost?'
     answer: 'Fractional CTO engagements vary based on time commitment, typically ranging from a few days per month for advisory to multiple days per week for hands-on leadership. The cost is a fraction of a full-time CTO salary plus equity, and the engagement scales up or down as your needs change. Most founders start with advisory and increase involvement around fundraising or major technical decisions.'
   - question: 'What is the difference between a fractional CTO and a technical consultant?'

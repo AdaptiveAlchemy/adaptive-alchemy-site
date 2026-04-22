@@ -3,8 +3,18 @@ title: 'Product & Technology Strategy Review'
 description: 'An independent evaluation of your product strategy, technical foundation, team capability, and execution readiness. Know exactly where you stand before investors or the market tells you.'
 shortDescription: 'Independent evaluation of your product strategy, technical foundation, team capability, and execution readiness.'
 order: 1
-cta: 'Know where you stand.'
+cta: 'Book Your Signal Review'
 ctaLink: '/contact'
+---
+
+## The Signal Review
+
+**The Signal Review.** A board-ready verdict on your AI position in 20 working days.
+
+Most organizations can describe their AI activity. Few can describe their AI capability — what is actually working, what is at risk, and what the evidence says about their real position. The Signal Review closes that gap. It is a bounded, senior-led assessment that produces a scored, evidence-based baseline your leadership team can stand behind and your board can interrogate.
+
+Three deliverables at the end of 20 working days: a scored maturity profile across six dimensions, a prioritized roadmap of high-confidence moves, and a governance evidence package suitable for board presentation or investor due diligence. These together enable a specific decision: where to invest next in AI, with a clear rationale and enough evidence to defend it under scrutiny.
+
 ---
 
 ## The problem
@@ -45,9 +55,11 @@ If implementation support is needed after the assessment, we can stay involved t
 
 ## How it works
 
-1. **Scope and align** (Week 1) — We define what matters most for your situation and tailor the assessment accordingly
-2. **Deep dive** (Weeks 2-3) — Codebase analysis, architecture review, team interviews, infrastructure audit, process evaluation
-3. **Synthesize and recommend** (Week 4) — Findings report with prioritized action plan, presented to leadership
-4. **Support** (2 weeks post-delivery) — Implementation guidance as your team executes, with optional support to mobilize trusted operators when needed
+The Signal Review runs in 20 working days. No open-ended engagement, no scope creep.
 
-**Typical engagement:** 2-4 weeks, depending on scope and complexity.
+1. **Scope and align** (Days 1–4) — We define what matters most for your situation, identify the evidence sources, and tailor the assessment to your specific context and decision horizon
+2. **Assessment** (Days 5–14) — Structured evaluation across six dimensions: AI strategy clarity, data infrastructure, use case pipeline, technology stack, governance and risk, and operational integration
+3. **Synthesis and scoring** (Days 15–18) — Maturity scoring, findings prioritization, and roadmap development grounded in the evidence collected
+4. **Delivery** (Days 19–20) — Board-ready findings presentation, scored maturity profile, prioritized roadmap, and governance evidence package delivered to leadership
+
+**After delivery:** Two weeks of implementation support available as your team acts on findings. Optional embedded execution support if the evidence points to a specific next initiative.

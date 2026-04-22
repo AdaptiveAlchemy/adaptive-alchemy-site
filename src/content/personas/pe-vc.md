@@ -4,12 +4,12 @@ description: 'Turn AI readiness into a value creation lever. Adaptive Alchemy he
 order: 1
 navLabel: 'For PE/VC'
 
-directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners assess AI readiness across portfolio companies. We evaluate each company's data infrastructure, AI strategy, technology stack, and governance controls, then deliver a prioritized investment plan that connects AI capability to measurable business outcomes and a stronger position at exit."
+directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners close the Accountability Gap — the risk that AI spend across portfolio companies produces no measurable exit value. We run The Signal Review, a structured AI readiness assessment that scores each portfolio company across six dimensions and delivers a board-ready verdict in 20 working days. The output is a fund-level AI readiness dashboard, per-company investment priorities, and diligence-ready documentation that connects AI capability directly to hold-period value creation."
 
 hero:
   eyebrow: 'For PE/VC Funds & Operating Partners'
-  headline: 'Most portfolio companies have no AI strategy worth defending. That is a valuation risk.'
-  subheadline: 'Most portfolio companies are running AI experiments with no coordination and nothing shipping. That is not a technology problem. It is a leadership and prioritization problem. We help funds turn scattered AI activity into documented capability that buyers actually value.'
+  headline: 'AI initiatives are running across your portfolio with no clear owner of outcomes. That is not a technology problem. It is an accountability problem.'
+  subheadline: 'Buyers are asking about AI capability in diligence. Operating partners need a credible answer before the process starts, not during it. We assess AI readiness across your portfolio and deliver diligence-ready output: documented capability, governance evidence, and a prioritized value creation roadmap aligned to your hold period.'
   primaryCta:
     label: 'Schedule a Portfolio Review'
     href: '/contact'
@@ -18,7 +18,7 @@ hero:
     href: '/services/technology-strategy-assessment'
 
 painPoints:
-  heading: 'The AI readiness gap is a portfolio-wide risk.'
+  heading: 'The Accountability Gap is a portfolio-wide risk.'
   subheading: 'Operating partners see these patterns across the portfolio:'
   items:
     - quote: 'Our portfolio companies are running scattered AI experiments with no coordination and no measurable outcomes.'
@@ -86,7 +86,9 @@ faq:
   - question: 'How long does a portfolio-wide AI readiness assessment take?'
     answer: 'A portfolio-wide AI readiness assessment typically takes 4 to 8 weeks depending on the number of companies. Each company assessment takes approximately one week of engagement. The deliverable is a fund-level dashboard with per-company scores, recommendations, and a prioritized investment roadmap aligned to your value creation plan.'
   - question: 'Should AI readiness be part of the 100-day plan for new acquisitions?'
-    answer: 'Yes. Technology due diligence at acquisition should include an AI readiness baseline. The 100-day plan should then include a focused AI assessment, identification of two or three high-confidence quick wins, and a 12-month AI roadmap. Companies that establish AI strategy early in the hold period build more exit value than those who start late.'
+    answer: 'Yes. Technology due diligence at acquisition should include an AI readiness baseline as a standard component, treated with the same rigor as financial and legal review. The 100-day plan should then include a focused AI assessment, identification of two or three high-confidence quick wins, and an 18-month AI roadmap aligned to the hold period. Companies that establish AI strategy in the first quarter of the hold period build measurably more exit value than those who start late — buyers pay for documented capability, not plans to build it. One structural note: internal assessments consistently overestimate AI readiness. An external assessment produces a baseline that stands up to diligence scrutiny because it was designed with that standard in mind from the start.'
+  - question: 'What is The Signal Review and how does it apply to PE/VC portfolio companies?'
+    answer: 'The Signal Review is a structured AI readiness assessment that evaluates a company across six dimensions — AI strategy clarity, data infrastructure, use case pipeline, technology stack, governance and risk, and operational integration — and delivers a scored, board-ready verdict in 20 working days. For PE/VC funds, The Signal Review runs at the portfolio-company level: each assessment produces a per-company maturity score, a prioritized investment roadmap aligned to your value creation thesis, and diligence-ready documentation that can be handed directly to a buyer or next-round investor. At the fund level, results aggregate into an AI readiness dashboard across the portfolio, giving operating partners a consistent baseline to compare companies, target co-investment in shared capabilities, and prioritize where embedded execution support creates the most exit value.'
   - question: 'How do you help portfolio companies avoid failed AI experiments?'
     answer: 'Most failed AI initiatives stem from poor use case selection, not technology limitations. We apply a structured prioritization framework that evaluates each use case against data availability, business impact, technical feasibility, and organizational readiness. This eliminates science projects and focuses investment on initiatives with a clear path to production and measurable business outcomes.'
 

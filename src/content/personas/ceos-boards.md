@@ -4,14 +4,14 @@ description: 'Get a credible AI strategy your board can stand behind. Adaptive A
 order: 2
 navLabel: 'For CEOs & Boards'
 
-directAnswer: 'Adaptive Alchemy helps non-technical executive teams build an AI strategy their board can stand behind. We assess your competitive position, identify high-confidence AI use cases, design governance controls, and deliver a phased roadmap with early wins within 90 days. Leadership gets a concrete plan rather than a vision document.'
+directAnswer: 'Adaptive Alchemy helps CEOs and boards close the Confidence Gap: the situation where executive teams are committing capital to AI without reliable signal on whether their investment reflects real capability or theatrical readiness. We deliver The Signal Review, a structured technology strategy assessment that produces a board-defensible AI strategy and governance framework in 20 working days — including high-confidence early wins deliverable within 90 days and a phased roadmap that holds up under board and investor scrutiny.'
 
 hero:
   eyebrow: 'For CEOs & Board Members'
-  headline: 'Your board is asking about AI. Do you have a credible answer?'
-  subheadline: 'The question is no longer whether to invest in AI. It is how to invest in the right things, govern what you deploy, and build a position your board can actually stand behind. We help executive teams develop an AI strategy they can execute and defend.'
+  headline: 'Your board is asking about AI strategy. The honest answer is: most organizations do not have one. They have activity.'
+  subheadline: 'Most executive teams are presenting an AI strategy to the board while operating on optimism and vendor roadmaps. We replace that with a reality-grounded baseline, governance that creates velocity rather than friction, and a phased investment plan you can stand behind when the board asks hard questions.'
   primaryCta:
-    label: 'Book a Strategy Session'
+    label: 'Request a Signal Review Briefing'
     href: '/contact'
   secondaryCta:
     label: 'See Our Assessment Approach'
@@ -74,7 +74,7 @@ engagementTiers:
 credibility:
   heading: 'We have been in these rooms.'
   paragraphs:
-    - "We have presented AI strategy to skeptical boards and sat on the other side of the table when the questions got pointed. We have spent nearly two decades inside a Fortune 100 enterprise software company's global sales organization, helped a national retailer cut $2.5M per month in operating costs, and built the internal case for why the cuts were sustainable. We have navigated PE exits, prepared organizations for acquisition, and been the people a board called when the technology leader and the revenue leader were not speaking the same language."
+    - 'We helped a national retailer cut $2.5 million per month in operating costs. More importantly, we built the internal case for why the cuts were sustainable — the work that keeps a board from reversing a decision six months later. We have presented AI strategy to skeptical boards and sat on the other side of the table when the questions got pointed. We have navigated PE exits, prepared organizations for acquisition, and been the people a board called when the technology leader and the revenue leader were not speaking the same language.'
     - 'If you are trying to figure out whether your technology investment is actually moving revenue, or whether your revenue motion is asking engineering for things engineering cannot deliver, that is a question we have answered before.'
 
 faq:
@@ -83,7 +83,9 @@ faq:
   - question: 'How do CEOs evaluate whether their company is ready for AI?'
     answer: 'Start with an honest assessment across five areas: data quality and accessibility, technology stack readiness, team capabilities and talent gaps, organizational willingness to change workflows, and governance maturity. Most companies overestimate their readiness because they confuse experimentation with operational capability. An external assessment provides the objective baseline boards need.'
   - question: 'What is the ROI of AI strategy consulting for a non-technical CEO?'
-    answer: 'AI strategy consulting typically pays for itself within the first quarter through quick-win identification alone. Beyond that, the strategic value lies in avoiding expensive mistakes: wrong vendor selection, premature hiring, misaligned use cases, and governance gaps that create liability. A 4-to-6-week engagement that prevents a single failed AI initiative saves multiples of its cost.'
+    answer: 'AI strategy consulting returns value through two tracks. The first is direct: quick-win identification within the first engagement phase typically delivers measurable business impact within 90 days. The second, and often larger, is avoidance: the cost of a failed AI initiative — including sunk engineering costs, lost leadership credibility, and the organizational drag of a demoralized team — typically runs $500K to $2M for mid-market companies. A 4-to-6-week engagement that prevents a single failed initiative saves multiples of its cost. Beyond initiative-level economics, the strategic value lies in avoiding the compounding consequences of poor vendor selection, premature hiring, and governance gaps that create compliance exposure. For non-technical executive teams, the engagement pays for itself when it closes the gap between what the board expects and what leadership can credibly commit to.'
+  - question: 'What is the Confidence Gap in AI strategy, and how does it affect executive decision-making?'
+    answer: 'The Confidence Gap is the situation where executive teams are committing capital to AI without reliable signal on whether their investment reflects real capability or theatrical readiness. It affects decision-making in two ways. First, it distorts investment: without an honest baseline, organizations fund AI initiatives based on vendor roadmaps and competitor announcements rather than evidence of what they can actually execute. Second, it creates board exposure: when a director asks for a credible account of the organization''s AI position and the answer is optimism rather than evidence, leadership credibility is at risk. The Signal Review closes the Confidence Gap by producing a scored, evidence-based view of where the organization actually stands — what is working, what is at risk, and where the highest-return moves are — in a format that holds up to board scrutiny.'
   - question: 'How should a board govern AI initiatives?'
     answer: 'Boards should establish an AI governance framework covering three areas: oversight mechanisms including a designated executive sponsor and regular board reporting on AI progress, risk management covering data privacy, model bias, and regulatory compliance, and investment discipline with clear milestones, decision gates, and measurable business outcomes for every funded initiative.'
   - question: 'What are the biggest risks of adopting AI without a strategy?'
