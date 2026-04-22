@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "adaptive_alchemy_site",
+  "project_id": "31a26e09-b7b2-477a-b491-8876c49e0d82"
+}
