@@ -3,6 +3,8 @@ title: 'Senior Support for CTOs & Engineering Leaders'
 description: 'Whether you just stepped into the CTO seat or your org is outgrowing your capacity, Adaptive Alchemy provides the senior technical partnership that engineering leaders need.'
 order: 4
 navLabel: 'For CTOs'
+cardHeadline: 'Senior support from someone who has held the seat'
+cardHook: 'The CTO seat is lonely. Most advisors have never held it.'
 
 directAnswer: 'Adaptive Alchemy provides senior advisory for first-time and scaling CTOs and engineering leaders. We serve as a confidential sounding board for your hardest decisions: product strategy, architecture, org design, AI strategy, board communication, and team scaling. Our advisors have held these roles — the guidance comes from experience, not frameworks.'
 

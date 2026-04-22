@@ -3,6 +3,8 @@ title: 'AI Readiness for PE/VC Portfolio Companies'
 description: 'Turn AI readiness into a value creation lever. Adaptive Alchemy helps PE/VC funds assess, build, and scale AI-powered operations across portfolio companies.'
 order: 1
 navLabel: 'For PE/VC'
+cardHeadline: 'AI accountability across your portfolio'
+cardHook: 'AI is running across your portfolio. No one owns the outcomes.'
 
 directAnswer: "Adaptive Alchemy helps PE/VC funds and operating partners close the Accountability Gap — the risk that AI spend across portfolio companies produces no measurable exit value. We run The Signal Review, a structured AI readiness assessment that scores each portfolio company across six dimensions and delivers a board-ready verdict in 20 working days. The output is a fund-level AI readiness dashboard, per-company investment priorities, and diligence-ready documentation that connects AI capability directly to hold-period value creation."
 

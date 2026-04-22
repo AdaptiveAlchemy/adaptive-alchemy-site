@@ -3,6 +3,8 @@ title: 'Rescue for Stalled AI Projects'
 description: 'Your AI initiative stalled. We diagnose what went wrong, fix the approach, and get you to production. Adaptive Alchemy specializes in turning failed AI pilots into working AI operations.'
 order: 5
 navLabel: 'For Stalled AI Projects'
+cardHeadline: 'Rescue for AI pilots that lost momentum'
+cardHook: 'Your pilot did not fail because AI does not work.'
 
 directAnswer: 'When your AI initiative stalls, Adaptive Alchemy diagnoses what actually went wrong — whether data quality, use case selection, engineering execution, or organizational structure — and builds a realistic restart plan. We get AI projects from failed proof of concept to production deployment, with concrete progress in the first 60 days that rebuilds internal confidence.'
 

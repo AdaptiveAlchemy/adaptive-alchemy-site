@@ -3,6 +3,8 @@ title: 'Product & Technology Advisory for Founders'
 description: 'A senior product and technology advisor in your corner. Adaptive Alchemy gives founders the strategic guidance they need across both product and engineering — on-demand, without the full-time executive cost.'
 order: 3
 navLabel: 'For Founders'
+cardHeadline: 'Technology decisions that compound for years'
+cardHook: 'The decisions you make in the next twelve months compound for years.'
 
 directAnswer: "Adaptive Alchemy's fractional CTO service gives founders senior product and technology leadership on a part-time basis, without the full-time executive cost or equity dilution of a premature senior hire. We help with architecture decisions, engineering team hiring, roadmap prioritization, and investor due diligence preparation — including a technical due diligence package structured for how institutional investors read it, not just how founders present it. Founders typically engage us before a funding round and retain us through the diligence process."
 

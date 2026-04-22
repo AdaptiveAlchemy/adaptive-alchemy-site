@@ -3,6 +3,8 @@ title: 'AI Strategy for CEOs & Boards'
 description: 'Get a credible AI strategy your board can stand behind. Adaptive Alchemy provides the strategic clarity and governance frameworks that executive teams need to move on AI with confidence.'
 order: 2
 navLabel: 'For CEOs & Boards'
+cardHeadline: 'AI strategy, not just AI activity'
+cardHook: 'Your board wants an AI strategy. Activity is not one.'
 
 directAnswer: 'Adaptive Alchemy helps CEOs and boards close the Confidence Gap: the situation where executive teams are committing capital to AI without reliable signal on whether their investment reflects real capability or theatrical readiness. We deliver The Signal Review, a structured technology strategy assessment that produces a board-defensible AI strategy and governance framework in 20 working days — including high-confidence early wins deliverable within 90 days and a phased roadmap that holds up under board and investor scrutiny.'
 
