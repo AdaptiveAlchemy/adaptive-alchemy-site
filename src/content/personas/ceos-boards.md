@@ -74,7 +74,7 @@ engagementTiers:
 credibility:
   heading: 'We have been in these rooms.'
   paragraphs:
-    - 'We helped a national retailer cut $2.5 million per month in operating costs. More importantly, we built the internal case for why the cuts were sustainable — the work that keeps a board from reversing a decision six months later. We have presented AI strategy to skeptical boards and sat on the other side of the table when the questions got pointed. We have navigated PE exits, prepared organizations for acquisition, and been the people a board called when the technology leader and the revenue leader were not speaking the same language.'
+    - 'We have presented AI strategy to skeptical boards and sat on the other side of the table when the questions got pointed. We have navigated PE exits, prepared organizations for acquisition, and been the people a board called when the technology leader and the revenue leader were not speaking the same language.'
     - 'If you are trying to figure out whether your technology investment is actually moving revenue, or whether your revenue motion is asking engineering for things engineering cannot deliver, that is a question we have answered before.'
 
 faq:

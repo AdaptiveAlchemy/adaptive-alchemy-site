@@ -63,7 +63,6 @@ credibility:
   heading: 'We fix what others leave broken.'
   paragraphs:
     - 'We have walked into AI initiatives that produced nothing usable and diagnosed why in days, not months. Most AI consultancies sell the vision. We clean up after the vision did not survive contact with reality.'
-    - 'We helped a national retailer cut $2.5 million per month in operating costs. More importantly, we built the internal case for why the cuts were sustainable — the work that keeps a board from reversing a decision six months later. That same discipline — evidence before commitment, honest diagnosis before action — is what we bring to stalled AI initiatives.'
     - 'We build AI systems that run in production. That is a fundamentally different skill than building demos that work in a conference room.'
 
 faq:
