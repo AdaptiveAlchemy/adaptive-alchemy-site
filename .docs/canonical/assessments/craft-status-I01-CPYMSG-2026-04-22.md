@@ -1,7 +1,7 @@
 ---
 initiative: I01-CPYMSG
 mode: auto
-overall_status: in_progress
+overall_status: completed
 auto_mode_confirmed_at: "2026-04-22T00:00:00Z"
 complexity_tier: medium
 session_ids: []
@@ -47,7 +47,7 @@ phases:
     briefing: null
   - phase: 4
     name: build
-    status: in_progress
+    status: approved
     human_decision: null
     panel_invoked: false
     panel_artifact_path: null
