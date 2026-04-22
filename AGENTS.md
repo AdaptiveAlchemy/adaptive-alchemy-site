@@ -43,7 +43,7 @@ cp -rf source dest          # NOT: cp -r source dest
 
 This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full workflow context and commands.
 
-### Quick Reference
+### Beads Quick Reference
 
 ```bash
 bd ready              # Find available work
