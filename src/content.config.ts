@@ -59,6 +59,8 @@ const personasCollection = defineCollection({
     description: z.string(),
     order: z.number(),
     navLabel: z.string(),
+    cardHeadline: z.string().optional(),
+    cardHook: z.string().optional(),
 
     directAnswer: z.string().optional(),
 
