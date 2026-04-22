@@ -94,6 +94,9 @@ const config: Config = {
           css: {
             '--tw-prose-body': '#F5F0EB',
             '--tw-prose-headings': '#F5F0EB',
+            h2: {
+              color: 'rgba(196, 162, 101, 0.8)'
+            },
             '--tw-prose-links': '#D4764E',
             '--tw-prose-bold': '#F5F0EB',
             '--tw-prose-quotes': '#F5F0EB',
