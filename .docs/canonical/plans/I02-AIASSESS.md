@@ -2,9 +2,13 @@
 title: AI Readiness Assessment — Initiative Plan
 initiative: I02-AIASSESS
 date: 2026-05-14
-status: draft
+status: needs-revision
 related-assessments:
   - assessments/offering-expansion-lower-market-2026-05-14.md
+panel_review: assessments/assessment-repo-charter-gate-panel-I02-AIASSESS-20260514.md
+auto_applied_count: 2
+drafted_count: 10
+human_required_count: 13
 ---
 
 # I02-AIASSESS: AI Readiness Assessment Initiative
@@ -193,7 +197,7 @@ A free, self-serve "AI Readiness Check" that lives on the Adaptive Alchemy site,
 3. **Radar chart** — Profile shape companion (see §3.3 for design decision); current state (filled) overlaid with Level N+1 target (outline); the binding constraint dimension highlighted in a distinct color
 4. **Dimension scorecard** — 6 horizontal bars with STRONG / FUNCTIONAL / DEVELOPING / NOT YET labels; binding constraint flagged as "Fix first"
 5. **Interpretation** — Why you landed here + what this is likely costing you (paired, AdviceForge pattern)
-6. **Benchmark context** — How you compare (3 stat cards from current research, as AdviceForge does well)
+6. **Benchmark context** — How you compare (3 stat cards from current research, as AdviceForge does well) — **[AA-1 AUTO-APPLIED]** All benchmark stat cards must display source, date, and sample context (e.g., "Based on N=X assessments, 2025"). Anonymous statistics are prohibited. If original AA client data is used, disclose sample size explicitly. If third-party research, cite the publication and year.
 7. **Your next level** — Level N+1 name, what it unlocks, 2–3 specific transition moves (from the roadmap matrix defined in §2.5); this section is the key differentiator — only the next level, not the full path
 8. **Build step** — One single, executable action for this week (not a 5-item plan — one specific move calibrated to workflow focus and maturity level)
 9. **Track CTA** — A, B, or C routed by score, with specific language; feels like a logical continuation, not a pitch
@@ -213,7 +217,7 @@ Constraint: GitHub Pages = fully static. No server-side rendering.
 
 Approach: **Client-side React app embedded in the Astro site.**
 
-- Survey component: multi-step React form, client-side state
+- Survey component: multi-step React form, client-side state — **[AA-2 AUTO-APPLIED]** A visible step counter or progress bar is required. All answer options must be behavior-based (concrete, observable actions — e.g., "We have a defined prompt review process that runs before production deployment") not abstract readiness descriptors (e.g., "Our AI governance is mature").
 - Scoring engine: pure JS — deterministic from answers, no server call needed
 - Report renderer: React component, takes score object and renders personalized report
 - Email gate: HubSpot form embed or HubSpot Forms API call (client-side, no backend needed)
@@ -288,3 +292,172 @@ Implementation: SVG-based, drawn client-side. Recharts or D3 — no heavy librar
 2. **Track A as a product:** The Foundations Workshop is described but not designed. Does this ship with Phase 3 v1 as a CTA, or is the Track A CTA a waitlist / "coming soon" until the product is built?
 3. **Assessment URL:** Does the free tool live at `/assess`, `/check`, or `/ai-readiness-check`? This affects Phase 1 CTAs.
 4. **Company vs. individual framing:** AdviceForge is explicitly individual-first, team-second. Adaptive Alchemy's ICP is team/org-first. The free tool should probably ask "is this for you personally or your team?" at the start and adjust the report framing accordingly — but this adds scope to Phase 3.
+
+---
+
+## Unresolved Questions (from charter gate panel — 2026-05-14)
+
+*For each Drafted Default (UQ-1 through UQ-10): confirm by changing `**Proposed Default:**` → `**Decision:**` inline, or override by editing the block. For Human decisions (UQ-A through UQ-M): the founder must originate the decision — the command's recommendation is labeled as such.*
+
+---
+
+### Drafted Defaults (confirm or override)
+
+**UQ-1: Success metrics**
+**Proposed Default (2026-05-14):** Add a Metrics section to Phase 3 as hypotheses with 90-day review trigger. Leading indicators: tool completion rate (target ≥60% of starters), email capture rate (target ≥70% of completers). Lagging indicators: Track B inquiry rate (target ≥10% of email-captured Track B scorers within 90 days), Track B closed-won rate from tool-sourced leads (to be set after first 20 leads). Review at 90 days and adjust.
+*Rationale: 4 panelists flagged the absence of any quantitative success definition. Without metrics, the team cannot make go/no-go decisions after Phase 1 or Phase 3 launch.*
+
+---
+
+**UQ-2: Pricing — defer publishing price until validated**
+**Proposed Default (2026-05-14):** The `/services/ai-readiness-assessment` page launches without a price anchor. Use "Fixed-scope, fixed-fee engagement — scoping call required" with booking link as the primary CTA. Collect pricing signal from the first 5 scoping conversations, then update the page. Do not publish €8–15K until validated.
+*Rationale: Phase 1 ships the services page first, but the charter states pricing validation happens before publishing. Publishing an unvalidated range on a premium services page signals uncertainty and anchors negotiation at the floor.*
+
+---
+
+**UQ-3: Not-for section copy**
+**Proposed Default (2026-05-14):** Exclusion criteria for the `/services/ai-readiness-assessment` page:
+- Companies that have not yet deployed AI in any business process — this is a capability and workflow assessment, not an AI introduction
+- Teams seeking a software or vendor audit — this assesses team practice and workflow design, not technology selection
+- Organizations without executive sponsorship for AI change — the deliverable is a roadmap, not a mandate; acting on it requires at least one internal owner
+Tone: "This isn't the right fit for X" not "You're not ready for X."
+*Rationale: The charter lists this section as required but provides no content. Two panelists flagged it as high-risk without copy direction — "not for" language can either build trust (when specific) or alienate prospects (when dismissive).*
+
+---
+
+**UQ-4: Gate scoring — pre-result explanation screen**
+**Proposed Default (2026-05-14):** Add a single screen before the scored result (between form submission + email gate + report) that explains gate scoring in plain language: "Your overall level is the highest level where every dimension meets the threshold — not an average. This means one dimension can hold you back even if the rest are strong. Here's where you landed and exactly why." This reframes the gate from a punitive outcome to a diagnostic precision feature.
+*Rationale: Both buyer personas (CTO and Founder) flagged that a lower-than-expected gate result without explanation would read as arbitrary scoring designed to manufacture a sales opportunity. The pre-result screen converts skepticism into understanding before the score appears.*
+
+---
+
+**UQ-5: Brand voice tonal addendum for lower-market audience**
+**Proposed Default (2026-05-14):** The assessment tool's copy brief should specify: same evidence-based directness as the main site, but with explicit consequence framing ("here is what staying at Level 2 costs you") and less assumption of prior brand familiarity. The report copy should read as if a consultant handed it to you — not a quiz result. Never use abstract maturity descriptors without a concrete behavioral anchor. Add 3–5 sentences to the Phase 3 copy brief before writing begins.
+*Rationale: The main site is calibrated for board/institutional buyers. The lower-market audience needs the same directness but more orientation.*
+
+---
+
+**UQ-6: Astro React island pattern (architectural)**
+**Proposed Default (2026-05-14):** The assessment route uses Astro for the page shell (H1, meta tags, intro paragraph, FAQ schema — all static HTML rendered at build time) and React for the survey and report components only, loaded via `client:visible`. The full assessment page must never be a fully client-rendered React SPA. The surrounding static content must be rich enough for Googlebot and AI crawlers to parse without executing JavaScript.
+*Rationale: 3 panelists (SEO, AEO, Web Dev) flagged that client-side rendering at the assessment URL makes the page uncrawlable by Googlebot's deferred queue and invisible to AI engines like Perplexity/ChatGPT Browse. The Astro island pattern resolves this without changing the GitHub Pages constraint.*
+
+---
+
+**UQ-7: Core Web Vitals acceptance criteria**
+**Proposed Default (2026-05-14):** Phase 3 acceptance criteria must include: LCP ≤2.5s on simulated 4G, INP ≤200ms, CLS ≤0.1. These are Google's "Good" thresholds. Enforce via Lighthouse CI. Primary CWV risks: radar chart rendering, HubSpot iFrame async load, jsPDF if retained in v1.
+*Rationale: No performance targets are defined in the charter. For a premium ICP (boards, PE partners, senior executives), a slow assessment tool undermines the brand's credibility signal.*
+
+---
+
+**UQ-8: PDF export — defer to v2**
+**Proposed Default (2026-05-14):** Explicitly defer jsPDF to v2. Replace PDF export with "email me the report" — a HubSpot email trigger that delivers the report content and creates an additional touchpoint. If PDF is retained in v1, use dynamic import on button click only (never in the main bundle).
+*Rationale: jsPDF adds ~500KB uncompressed to the bundle. For a feature used by a minority of users, this is an unacceptable LCP hit for the majority. The email-me pattern removes the dependency, reduces bundle size, and improves HubSpot data capture.*
+
+---
+
+**UQ-9: Radar chart library**
+**Proposed Default (2026-05-14):** Use Recharts with dynamic import (`client:visible`) for the radar chart island. If D3 is preferred for bundle control, budget the additional implementation time explicitly. Do not leave this decision to the implementer.
+*Rationale: Recharts and D3 are not equivalent choices — Recharts adds ~130KB gzipped but reduces implementation time; D3 adds implementation days. Leaving this open creates scope ambiguity.*
+
+---
+
+**UQ-10: Phase 3 distribution section**
+**Proposed Default (2026-05-14):** Add a Distribution section to Phase 3 scope. Minimum: (a) primary traffic source (organic search + LinkedIn), (b) 3 seeding actions at launch (founder LinkedIn post, newsletter mention, direct outreach to 20 existing contacts), (c) minimum traffic threshold — if fewer than 50 completions in 60 days, switch to active promotion rather than waiting for organic growth.
+*Rationale: The charter states "lower-market buyers arrive via SEO and content" but defines no distribution plan. Without seeding, Phase 3 can ship a well-built tool that generates zero leads.*
+
+---
+
+### Human Decisions Required (founder must originate)
+
+**UQ-A: Track A CTA before the product exists**
+The Track A (Foundations Workshop) product is deferred. Phase 1 CTAs on persona pages will route Level 1–2 buyers somewhere. Phase 3 will route Level 1–2 assessment completers to a Track A CTA with no destination. This is a trust-destroying dead-end.
+Options: (1) Self-select Level 1 users out at the start with a routing question ("Has your team used AI tools in actual work, at least occasionally?") — fastest, most honest; (2) Floor the scoring: Level 1–2 results show "you're earlier than this tool is designed for" + a specific waitlist with a real date; (3) Route Level 1–2 to a waitlist/newsletter with value content as the interim CTA.
+**Command's recommendation:** Option 1 — a routing question at the start is the lowest-scope resolution and reframes the self-selection as a product feature (the question itself orients the user). It prevents 7-minute investment before misrouting.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-B: Phase 3 persistence architecture**
+The charter requires saved URL for re-take comparison AND "no backend required for v1." These are incompatible on GitHub Pages. Specific conflicts: (a) URL hash encoding is viable for scores but not email (GDPR); (b) localStorage is device-scoped (lost on browser clear, breaks cross-device sharing); (c) HubSpot read-back requires exposing a private API key client-side.
+Options: (1) Descope URL persistence and re-take comparison to v2 — launch the tool, validate conversion, add persistence when you know what state is worth persisting. "Save your results" = email delivery of the full report; (2) Add a Cloudflare Worker or Netlify Function to store result state keyed to a UUID — v1 scope but must be planned now; (3) Re-take comparison is email-delivered, not URL-stored — HubSpot workflow detects same email and personalizes the follow-up email with delta.
+**Command's recommendation:** Option 1 — descope URL persistence and re-take comparison to v2. This is the lowest-risk v1 scope consistent with "GitHub Pages = fully static." Use email delivery as the persistence mechanism for v1.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-C: SEO architecture — Astro island + static level pages**
+The Astro island pattern (UQ-6 above) is the minimum fix for crawlability. The SEO Strategist additionally recommends creating 5 separate static maturity-level landing pages (one per level) as organic entry points that the tool links to post-score. These pages own the long-tail query space ("how to move from AI Practicing to Systematic") that boutique consultancies can win.
+**Command's recommendation:** Implement UQ-6 as architectural baseline. Evaluate the 5-static-pages cluster strategy as a Phase 3 enhancement with a separate scope decision.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-D: Keyword research — must precede Phase 1 copy and URL decisions**
+"AI readiness assessment" is dominated by McKinsey, IBM, Deloitte, and Gartner. The assessment URL (/assess vs. /check vs. /ai-readiness-check) is also undecided. Both decisions depend on keyword research that has not been done.
+**Command's recommendation:** Commission a keyword research brief before Phase 1 copy or URL decisions are finalized. This is a ≤1-day T2 task (Gemini). It gates every H1, meta description, and URL slug in Phase 1.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-E: Benchmark data source**
+The Phase 3 report requires 3 benchmark stat cards with source, date, and sample context (AA-1 applied). No data source is currently named.
+Options: (a) Use Adaptive Alchemy client engagement data with honest n-disclosure; (b) License third-party research (McKinsey, BCG, MIT Sloan AI survey); (c) Commission a micro-survey of the existing contact list.
+**Command's recommendation:** Option (a) — use AA's own client data with honest small-n disclosure and plan to replace with proprietary benchmark data after 20 tool completions. This is the most brand-consistent and AEO-optimal choice. Publish a public benchmark page once n≥20.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-F: Proprietary framework name**
+The five-level maturity model and six-dimension framework are named generically. "AI Readiness" + generic level names builds no knowledge graph entity that AI engines can cite. Every piece of content and structured data should reference a named proprietary framework.
+**Command's recommendation:** Name the framework before any content is written. Example patterns: "The Adaptive Alchemy AI Fluency Index" or "The Agent Readiness Model." This is a brand decision, not a content decision.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-G: AEO/GEO and structured data workstream**
+No structured data plan exists (no FAQ schema, Service schema, HowTo schema). No AI query map defines what questions the content should answer for AI engines. No entity strategy for Adaptive Alchemy as a brand entity.
+**Command's recommendation:** Add an explicit AEO/GEO gate before Phase 3 launches: (a) define 10–15 target AI queries at three intent levels, (b) implement Service schema + FAQPage schema on the assessment page (Astro JSON-LD component — trivial to build once, reusable), (c) create a static "sample report" page as a citable artifact for AI engines.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-H: Company vs. individual framing**
+The assessment produces a score for one person completing the form. The founders and CTOs who are the target audience care about their team's readiness, not just their own. This is an open question in the charter that forks HubSpot contact properties, scoring weights, email sequence voice, report copy, and the Track B CTA bridge.
+**Command's recommendation:** Frame as individual-first with an explicit bridge in the Track B CTA: "You've seen your own baseline. The Assessment sprint maps your whole team." Add a routing question at intake ("Are you assessing primarily your own practice or your team's readiness?") that adjusts interpretation copy without changing the scoring engine. The paid product is where team-level data enters.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-I: Maturity model methodology provenance**
+CTOs will not share the report with leadership without a sourcing statement. The report needs one sentence of honest provenance: "Based on X engagements / adapted from Y framework / calibrated against Z." Without it, the scoring reads as arbitrary.
+**Command's recommendation:** Add a one-paragraph methodology note to the report footer and the services page. This is not marketing copy — it is honest framing that transforms a quiz into a diagnostic instrument in the reader's mind.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-J: /for/stalled-ai-projects SEO equity audit before rewrite**
+The page reframe (rescue narrative → clarity/assessment) may trade existing conversion traffic for a new audience. Before rewriting: pull GSC data for current impressions, clicks, average position, and queries. Check for inbound links. If equity exists, use expand-contract: add new framing alongside existing content, validate no ranking drop, then remove old framing.
+**Command's recommendation:** Pull GSC data first. If the page drives meaningful organic traffic, use expand-contract. If it has no significant traffic, rewrite directly.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-K: Premium brand vs. free tool coexistence**
+A free self-serve AI quiz and a premium board-level advisory practice are in genuine tension. Four panelists raised this. The risk: the tool becomes the primary Adaptive Alchemy citation context for AI engines, displacing the enterprise advisory brand signal.
+Options: (a) Keep the free tool but gate it behind a separate sub-brand or microsite; (b) Reframe the tool as a "board briefing" artifact (something a CTO sends to a board); (c) Add company email domain filtering to improve signal quality; (d) Treat the tool's entry point as a deliberate "these are two different buyers" tonal bridge on the landing page.
+**Command's recommendation:** Option (d) — a deliberate tonal bridge is the lowest-scope resolution. The assessment entry page should speak directly to operational leaders ("Built for engineering leaders and founders managing AI implementation") to signal intent without creating a separate brand surface.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-L: AdviceForge differentiation strategy**
+The charter uses AdviceForge as a research reference and acknowledges three AA-specific additions. From a product marketing and IP standpoint, the question is whether to (a) acknowledge AdviceForge as an influence and position AA's additions as a substantive specialization, or (b) design a sufficiently differentiated model that AdviceForge is only a research input.
+**Command's recommendation:** Option (a) — acknowledge publicly as a research input and position the Governance & Systematization dimension + gate scoring model as AA's substantive methodological additions. This is intellectually honest, avoids IP risk, and the additions are genuinely substantive.
+**Decision:** *(founder to fill in)*
+
+---
+
+**UQ-M: GDPR consent architecture**
+The 90-day HubSpot email sequence triggered by form submission requires explicit consent under GDPR (Europe-based founder, European ICP). The charter does not mention consent architecture, unsubscribe mechanics, or data retention policy for assessment scores stored as contact properties.
+**Command's recommendation:** Add GDPR consent to the email gate form: explicit opt-in checkbox for the email sequence, clear statement of how dimension scores will be stored and used, and standard HubSpot unsubscribe mechanics. This is a Phase 3 acceptance criterion.
+**Decision:** *(founder to fill in)*
