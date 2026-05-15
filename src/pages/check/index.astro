@@ -1,4 +1,5 @@
 ---
+import AssessmentIsland from '@/components/assessment/AssessmentIsland'
 import PageLayout from '@/layouts/PageLayout.astro'
 
 const title = 'AI Readiness Check | Free Interactive Maturity Benchmarking Tool'
@@ -24,7 +25,11 @@ const description =
         next step &mdash; without booking a call or sharing your email.
       </p>
 
-      {/* AssessmentIsland placeholder — wired in P3-E-2 */}
+      <AssessmentIsland
+        client:visible
+        hubspotPortalId={import.meta.env.PUBLIC_HUBSPOT_PORTAL_ID ?? ''}
+        hubspotFormGuid={import.meta.env.PUBLIC_HUBSPOT_FORM_GUID ?? ''}
+      />
     </div>
   </section>
 </PageLayout>

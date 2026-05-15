@@ -53,7 +53,11 @@ export default defineConfig([
     },
     rules: {
       '@typescript-eslint/triple-slash-reference': 'off',
-      '@typescript-eslint/sort-type-constituents': 'error'
+      '@typescript-eslint/sort-type-constituents': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
+      ]
     }
   },
   {
@@ -78,10 +82,13 @@ export default defineConfig([
   {
     files: ['**/*.{jsx,tsx}'],
     plugins: { react, 'jsx-a11y': jsxA11y },
+    settings: { react: { version: 'detect' } },
     rules: {
       ...react.configs.recommended.rules,
       ...jsxA11y.configs.recommended.rules,
-      '@typescript-eslint/sort-type-constituents': 'error'
+      '@typescript-eslint/sort-type-constituents': 'error',
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-react': 'off'
     }
   },
   {
