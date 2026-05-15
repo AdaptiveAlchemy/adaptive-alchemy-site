@@ -3,7 +3,12 @@
 // ---------------------------------------------------------------------------
 
 export type DimensionKey =
-  'context-prompting' | 'delivery-integration' | 'governance-systematization' | 'judgment-verification' | 'task-recognition' | 'workflow-design'
+  | 'context-prompting'
+  | 'delivery-integration'
+  | 'governance-systematization'
+  | 'judgment-verification'
+  | 'task-recognition'
+  | 'workflow-design'
 
 export type MaturityLevel = 1 | 2 | 3 | 4 | 5
 

@@ -39,6 +39,7 @@ If that next move points to targeted improvement work, the assessment feeds dire
 ## Not for every situation
 
 The AI Readiness Assessment is not the right starting point if:
+
 - You have not yet experimented with AI tools in actual work (not even occasionally) — a different conversation makes more sense
 - You need a technical AI infrastructure audit rather than a team fluency assessment
 - You are looking for a multi-team or enterprise-wide benchmarking program
