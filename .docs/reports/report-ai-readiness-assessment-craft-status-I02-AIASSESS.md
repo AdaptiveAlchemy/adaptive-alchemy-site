@@ -138,7 +138,7 @@ Mode: auto
 
 ### Phase 4: Build — in_progress
 - Started: 2026-05-15T11:45:00Z
-- Commits: add87cc (plan), 2034d9d (P3 gate), faa0a17 (P1+P2-A-1), 93c1786 (P3-A-1/A-2)
+- Commits: add87cc (plan), 2034d9d (P3 gate), faa0a17 (P1+P2-A-1), 93c1786 (P3-A-1/A-2), 4f13b78 (P1-D-1 ServiceCards), 8f45133 (P3-A-5+P2-B-1/2/3+P2-A-2), 3e3f87d (P3-A-3/4+P2-B-4), b95787c (scoring.ts+routing.test.ts wip)
 
 <details>
 <summary>Session handoff snapshot — 2026-05-15T13:30:00Z</summary>
@@ -185,6 +185,63 @@ Framework: check package.json for vitest config
 - Email blocklist: src/lib/assessment/email-blocklist.ts
 - Service page: src/content/services/ai-readiness-assessment.md
 - /check shell: src/pages/check/index.astro
+
+</details>
+
+<details>
+<summary>Session handoff snapshot — 2026-05-15T15:05:00Z</summary>
+
+**Completed this session (13 tasks closed — 10 full + 3 pending Beads close):**
+- efj ✓ ServiceCards: services registry extracted to src/lib/services.ts (as const, type-safe); AI Readiness Assessment card added first. Commit 4f13b78.
+- n6q ✓ content-maps.ts: 4 AA-1 benchmark citations, HEADLINE_FINDINGS + LEVEL_DESCRIPTORS per MaturityLevel. Commit 8f45133.
+- 7a3 ✓ brand-usage-spec.md: canonical naming, HubSpot keys, dual-label convention. Commit 8f45133.
+- hcz ✓ gdpr-retention-erasure-spec.md: C-15/C-17/C-19/C-24 documented. Commit 8f45133.
+- 8w6 ✓ aeo-query-map.md: 13 queries, 3 intent levels, engine annotations. Commit 8f45133.
+- fgb ✓ maturity-model-5x6-matrix.md: DRAFT, 30 cells, D6 Track C trigger ≥70. Commit 8f45133.
+- 3fk ✓ intake-questionnaire.md: 23 questions, S32/S19/S19b/S30/S32b coverage. Commit 3e3f87d.
+- e1n ✓ AssessmentIsland.tsx (walking skeleton, client:visible); /check/index.astro updated. Commit 3e3f87d.
+- 2in ✓ GateScoringExplanationScreen.tsx (onContinue prop, static gate-scoring explanation copy). Commit 3e3f87d.
+- 1lb ✓ transition-roadmaps.md: 5 roadmaps (1→2, 2→3, 3→4, 4→5, frontier). Committed b95787c. **BD NOT CLOSED — do `bd close 1lb` first.**
+- 7vk (scoring.ts GREEN, committed b95787c; BD NOT CLOSED — close after routing.ts refactor)
+- riu (routing.test.ts RED committed b95787c; routing.ts NOT YET WRITTEN)
+
+**Immediate next actions (ordered):**
+1. `bd close 1lb --reason "transition-roadmaps.md: 5 roadmaps committed b95787c"`
+2. Update failing tests cache to record routing.test.ts as failing (RED state):
+   `python3 -c "import json,datetime,timezone; now=datetime.datetime.now(datetime.timezone.utc).isoformat(); open('.docs/.cache/failing-tests.json','w').write(json.dumps({'generated_at':now,'tests':[{'file':'src/lib/assessment/routing.test.ts','test_id':'compile: module not found','last_run_ts':now,'status':'failing'}]}))"`
+3. Write `src/lib/assessment/routing.ts` — exports: `TRACK_C_D6_MIN_SCORE = 80`, `assignTrack(score: AssessmentScore): TrackAssignment`. S25 logic: level≤2→A; level≥4 AND D6 normalized≥80→C; level=5→C; else→B.
+4. Set TDD state to REFACTOR then refactor `src/lib/assessment/scoring.ts` to import `assignTrack` from `./routing` (replace inline track assignment logic in `scoreAssessment`).
+5. `pnpm check:astro` — must be 0 errors.
+6. `pnpm lint:fix`
+7. `bd close 7vk --reason "scoring.ts: gate scoring engine TDD complete, commit b95787c"` then `bd close riu --reason "routing.ts: assignTrack S25a/b/c/d, commit <new SHA>"`
+8. Commit: `feat(I02-AIASSESS): P3-B-1/B-2 + P2-A-3 — scoring engine, track routing, transition roadmaps`
+9. `bd dolt push && git push`
+
+**Beads still in_progress (claimed):** 7vk, riu — close after routing.ts commit
+**Beads newly unblocked (not yet claimed):** h4r (SurveyFlow.tsx — depends on scoring+routing), and check `bd ready --label I02-AIASSESS`
+
+**Key file locations:**
+- routing.test.ts (RED): src/lib/assessment/routing.test.ts
+- scoring.ts (GREEN): src/lib/assessment/scoring.ts
+- Types: src/lib/assessment/types.ts (AssessmentScore, TrackAssignment, MaturityLevel, DimensionScore)
+- transition-roadmaps.md: .docs/canonical/assessments/transition-roadmaps.md
+
+**TDD guard protocol (no vitest — compile-time checks only):**
+- Cache file: .docs/.cache/failing-tests.json — update to `status: failing` before writing production code
+- REFACTOR state file: .git/tdd-cycle-state.json — set `{"state":"refactor"}` for REFACTOR edits
+- Reset both after GREEN verified
+
+**CI FAILURE — fix before routing.ts work (URGENT):**
+`pnpm audit --prod --audit-level high` fails with 3 high vulns (fast-uri path-traversal + host-confusion, devalue DoS). All transitive prod deps. Fix: add pnpm overrides to package.json then run `pnpm install`:
+```json
+"pnpm": { "overrides": { "fast-uri": ">=3.1.2", "devalue": ">=5.8.1" } }
+```
+Then commit: `fix: pnpm overrides for fast-uri + devalue high-severity vulns`
+
+**ESLint fixes applied this session:**
+- @types/react added to devDependencies (pnpm was not hoisting it)
+- react/react-in-jsx-scope disabled for .tsx files (React 17+ JSX transform)
+- @typescript-eslint/no-unused-vars: argsIgnorePattern: '^_' added
 
 </details>
 

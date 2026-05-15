@@ -4,6 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.30.2",
+  "pnpm": {
+    "overrides": {
+      "fast-uri": ">=3.1.2",
+      "devalue": ">=5.8.1"
+    }
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
