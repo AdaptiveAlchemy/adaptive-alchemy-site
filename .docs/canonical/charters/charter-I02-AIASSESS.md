@@ -7,7 +7,7 @@ related-assessments:
   - assessments/offering-expansion-lower-market-2026-05-14.md
 panel_review: assessments/assessment-repo-charter-gate-panel-I02-AIASSESS-20260515.md
 auto_applied_count: 6
-drafted_count: 9
+drafted_count: 0
 human_required_count: 0
 ---
 
@@ -478,23 +478,28 @@ The 90-day HubSpot email sequence triggered by form submission requires explicit
 
 ## Unresolved Questions (from charter gate panel — 2026-05-15)
 
-*Re-validation panel following founder resolution of all prior UQs (2026-05-15). These 9 items are clarifications of existing decisions — no new founder decisions required. Confirm by changing `**Proposed Default:**` → `**Decision:**` inline, or override by editing the block.*
+*All 9 items confirmed by founder (2026-05-15). Zero unresolved questions remain.*
 
 ---
 
 **UQ-11: Company email domain filtering mechanism**
 UQ-K selected option (c) — company email domain filtering. On a GitHub Pages static site (fully client-side), three implementation approaches exist with materially different tradeoffs:
-- **Option A — HubSpot post-submit filter:** form accepts any email; HubSpot workflow tags free-domain contacts (gmail.com, yahoo.com, hotmail.com, etc.) and routes them to a separate bucket or suppresses the sequence. Most robust, zero client-side complexity, blocklist not exposed in bundle. Recommended.
-- **Option B — Client-side UX nudge:** if email matches free-domain list, display inline message ("For more accurate track routing, consider using your work email — personal email works too"). User can proceed. Blocklist is visible in bundle.
-- **Option C — Hard gate:** rejects personal email, no path forward. High abandonment risk for legitimate smaller-company ICPs who use personal email for work.
-**Proposed Default (2026-05-15):** Option A — HubSpot post-submit filtering. Personal email addresses still submit and enter HubSpot, but are tagged with `email_domain_type: personal` and routed to a separate nurture bucket rather than the primary 90-day track sequence. No client-side filtering. Add `company_email_domain` as a HubSpot contact property. This is a Phase 3 AC.
-*Rationale: 3 panelists (architect, product-analyst, acceptance-designer) flagged this as P0 or P1. HubSpot-side filtering is most consistent with the GitHub Pages constraint and aligns with where all other routing logic lives.*
+- **Option A — HubSpot post-submit filter:** form accepts any email; HubSpot workflow tags free-domain contacts (gmail.com, yahoo.com, hotmail.com, etc.) and routes them to a separate bucket or suppresses the sequence. Most robust, zero client-side complexity, blocklist not exposed in bundle.
+- **Option B — Client-side UX nudge:** if email matches free-domain list, display inline message. User can proceed.
+- **Option C — Hard gate:** rejects personal email, no path forward.
+**Decision:** *Both client-side AND HubSpot capture filtering. Client-side: initial small blocklist (gmail.com, hotmail.com, yahoo.com, outlook.com, icloud.com, and major equivalents) validates on email field input. If matched, the form shows an inline error and blocks submission — user must enter a non-blocklisted email to proceed. The blocklist is version-controlled and expandable. HubSpot: additionally stores `company_email_domain` as a contact property and tags free-domain contacts at capture time for downstream routing. Both layers enforce the filter — client side for UX clarity, HubSpot side for data integrity.*
+
+Phase 3 ACs:
+- Email field validates against the blocklist before submission fires
+- Blocked domains show inline message: "Please use your work email — this assessment is designed for teams, not individuals"
+- `company_email_domain` stored as HubSpot contact property on every submission
+- Blocklist maintained as a version-controlled config array in the codebase (not hard-coded inline)
 
 ---
 
 **UQ-12: Phase 1 and Phase 2 gate condition definitions**
 Both phase gates use "decisions locked" / "framework locked" but provide no testable acceptance criteria. An implementation team cannot determine when Phase 1 is complete without a judgment call.
-**Proposed Default (2026-05-15):**
+**Decision:**
 - **Phase 1 "locked" criteria (minimum):** (a) keyword research complete and assessment URL slug decided, (b) /services/ai-readiness-assessment page live with approved copy, (c) CTAs on /for/founders, /for/ctos, and /for/stalled-ai-projects pointing to the decided URL, (d) homepage engagement ladder updated, (e) founder sign-off on copy.
 - **Phase 2 "locked" criteria (minimum):** (a) 5×6 dimension-threshold matrix documented and reviewed, (b) all five transition roadmaps written, (c) intake questionnaire drafted with maturity-calibrated anchors, (d) routing logic thresholds defined numerically (what Dimension 6 score triggers Track C), (e) AEO/GEO prerequisites complete (UQ-16), (f) framework brand usage spec complete (UQ-17), (g) founder sign-off on framework.
 *Rationale: 3 panelists flagged that untestable gate conditions produce recurring negotiation instead of observable state changes.*
@@ -503,7 +508,7 @@ Both phase gates use "decisions locked" / "framework locked" but provide no test
 
 **UQ-13: Framework dual-label strategy — "AI Readiness Assessment" vs. "Adaptive Alchemy AI Fluency Index"**
 UQ-F named the proprietary framework but the charter still uses "maturity model," "AI Readiness Assessment," and "AI Fluency Index" interchangeably. Phase 1 copywriters need to know which label to use where.
-**Proposed Default (2026-05-15):** Two-label strategy:
+**Decision:** Two-label strategy:
 - **Primary product/SEO label:** "AI Readiness Assessment" — used in H1, URL slug, meta title, booking CTAs, and service page headline. This is the discoverability term.
 - **Proprietary methodology proper noun:** "Adaptive Alchemy AI Fluency Index" — used in body copy, report attribution, structured data schema name (Schema.org `name` field), and any content positioning the framework as original research. Shorthand: "AI Fluency Index" acceptable after first full mention.
 - **HubSpot contact properties:** use clean keys (`ai_fluency_level`, not `adaptive_alchemy_ai_fluency_index_level`) — brand name lives in rendered copy and schema, not in data property names.
@@ -514,7 +519,7 @@ Add this two-label specification to the Phase 1 copy brief before writing begins
 
 **UQ-14: Methodology provenance note content (UQ-I + UQ-L)**
 UQ-I confirmed a one-paragraph methodology note in the report footer and services page. UQ-L chose full differentiation (no AdviceForge acknowledgment). These are co-dependent: the note must be drafted before Phase 1 copy writing, but the exact text isn't specified.
-**Proposed Default (2026-05-15):** Methodology note text template:
+**Decision:** Methodology note text template:
 "The Adaptive Alchemy AI Fluency Index was developed from [N] client engagements across [describe sectors] and calibrated through primary research with [N] organizations. The framework incorporates governance and auditability requirements we identified as consistent gaps in existing AI adoption assessments. Gate scoring (not averaging) ensures maturity levels reflect actual practice thresholds, not optimistic self-reporting."
 Complete the bracketed fields before Phase 1 copy is finalized. Founder to provide: current client engagement count, sectors, and time range that can be cited honestly.
 *Rationale: 2 panelists flagged that the methodology note without content creates a Phase 1 copy blocker and leaves copy authors to invent language that may undermine credibility with skeptical CTOs.*
@@ -523,14 +528,14 @@ Complete the bracketed fields before Phase 1 copy is finalized. Founder to provi
 
 **UQ-15: Benchmark data fallback state at Phase 3 launch**
 UQ-E selected micro-survey + own client data. The micro-survey hasn't been commissioned and Phase 3 may ship before it completes. AA-1 prohibits anonymous statistics, so the benchmark section cannot use placeholder copy. An undefined fallback means the implementer either blocks or violates AA-1.
-**Proposed Default (2026-05-15):** Launch fallback state: if AA proprietary benchmark data is not available at launch (micro-survey not yet complete and own client n < 5), the benchmark stat cards render one or two clearly attributed third-party citations (e.g., McKinsey AI Index 2024, BCG AI at Work 2024) as the interim state. Each card must display source and year per AA-1. Own AA data replaces external sources as n grows; the section fully upgrades to proprietary benchmarks when n ≥ 20. Component must handle null data gracefully (section collapses to the external-citations state, no anonymous statistics).
+**Decision:** Launch fallback state: if AA proprietary benchmark data is not available at launch (micro-survey not yet complete and own client n < 5), the benchmark stat cards render one or two clearly attributed third-party citations (e.g., McKinsey AI Index 2024, BCG AI at Work 2024) as the interim state. Each card must display source and year per AA-1. Own AA data replaces external sources as n grows; the section fully upgrades to proprietary benchmarks when n ≥ 20. Component must handle null data gracefully (section collapses to the external-citations state, no anonymous statistics).
 *Rationale: 3 panelists flagged (acceptance-designer as P0, architect as P1, product-analyst as P2) that an undefined launch state will either block Phase 3 or produce an AA-1 violation.*
 
 ---
 
 **UQ-16: AEO/GEO workstream phase assignment and delivery owner**
 UQ-G agreed to an AEO/GEO gate before Phase 3 launches but assigned no phase, no delivery owner, and no definition of "complete." The three deliverables — 10-15 target AI queries, Service+FAQPage schema, static sample report page — are prerequisites for Phase 3 launch but not in any phase's scope.
-**Proposed Default (2026-05-15):** Assign AEO/GEO workstream to Phase 2 as required deliverables for the Phase 2 "locked" gate:
+**Decision:** Assign AEO/GEO workstream to Phase 2 as required deliverables for the Phase 2 "locked" gate:
 - Phase 2 deliverable: produce 10-15 target AI query list at three intent levels (informational, navigational, transactional for the assessment offering)
 - Phase 2 deliverable: write FAQ copy for FAQPage schema (10-15 Q&As anchored to target queries)
 - Phase 2 deliverable: brief for the static sample report page (content and format spec)
@@ -541,14 +546,14 @@ Phase 3 AC: Service schema + FAQPage schema implemented on the assessment page (
 
 **UQ-17: Framework name Phase 2 deliverable (brand usage spec)**
 UQ-F named the framework but no Phase 2 deliverable produces formal framework documentation under the "Adaptive Alchemy AI Fluency Index" name. Without this, Phase 3 implementers will make independent decisions about how the brand name appears in data vs. copy vs. schema.
-**Proposed Default (2026-05-15):** Add to Phase 2 deliverables: "Adaptive Alchemy AI Fluency Index brand usage spec" — a one-page document covering: (a) canonical framework name and approved shorthand, (b) HubSpot contact property naming convention, (c) report level-label format (e.g., "Level 3 — Practicing" vs. "AI Fluency Index Level 3 — Practicing"), (d) Schema.org `name` field value for Service and FAQPage schema. This document gates Phase 3 report renderer and schema implementation.
+**Decision:** Add to Phase 2 deliverables: "Adaptive Alchemy AI Fluency Index brand usage spec" — a one-page document covering: (a) canonical framework name and approved shorthand, (b) HubSpot contact property naming convention, (c) report level-label format (e.g., "Level 3 — Practicing" vs. "AI Fluency Index Level 3 — Practicing"), (d) Schema.org `name` field value for Service and FAQPage schema. This document gates Phase 3 report renderer and schema implementation.
 *Rationale: 2 panelists (architect, product-analyst) flagged that the brand name decision creates branching implementation paths in the scoring engine output format and HubSpot property schema.*
 
 ---
 
 **UQ-18: Services page conversion copy direction**
 Phase 3 routes Level 3-4 scorers to /services/ai-readiness-assessment which launches with no price anchor (UQ-2). The page as specified lacks conviction copy for cold organic visitors who have never heard of Adaptive Alchemy. "Fixed-scope, fixed-fee — scoping call required" is insufficient to convert a cold visitor who just took the free tool.
-**Proposed Default (2026-05-15):** Phase 1 services page must include at minimum:
+**Decision:** Phase 1 services page must include at minimum:
 - Scope signal: "Typical engagement: 2–3 weeks, one team, covering 6 workflow dimensions and 3–5 stakeholder interviews"
 - Risk-reduction signal: "Standalone engagement — no ongoing commitment required"
 - CTA: "Book a 30-minute scoping call — we'll confirm fit before anything starts"
@@ -559,7 +564,7 @@ The price field stays empty (UQ-2). These three elements close the conviction ga
 
 **UQ-19: UQ-H routing question branching copy spec**
 UQ-H confirmed individual-first framing and a routing question at intake ("Are you assessing primarily your own practice or your team's readiness?"). The charter does not specify how the answer affects the report. Without a branching spec, Phase 3 implementers will either make this question cosmetic (changes nothing) or invent branching logic.
-**Proposed Default (2026-05-15):** Minimal branching — the scoring engine is unchanged in both variants. Only copy differs:
+**Decision:** Minimal branching — the scoring engine is unchanged in both variants. Only copy differs:
 - "My own practice" → report uses first-person singular framing throughout; Track B CTA includes team bridge sentence: "You've seen your own baseline. The Assessment sprint maps your whole team."
 - "My team's readiness" → report uses team framing for Interpretation and Next Level sections; Track B CTA is direct: "The Assessment sprint maps your team's dimensions — starting from where you've identified today."
 Document this branching spec in Phase 3 §3.1 before report copy is written.
