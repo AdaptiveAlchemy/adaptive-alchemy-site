@@ -138,7 +138,55 @@ Mode: auto
 
 ### Phase 4: Build — in_progress
 - Started: 2026-05-15T11:45:00Z
-- First unblocked task: dj5 (P1-A keyword research)
+- Commits: add87cc (plan), 2034d9d (P3 gate), faa0a17 (P1+P2-A-1), 93c1786 (P3-A-1/A-2)
+
+<details>
+<summary>Session handoff snapshot — 2026-05-15T13:30:00Z</summary>
+
+**Completed this session (9 tasks closed):**
+- dj5 ✓ keyword research → /check confirmed, /services/ai-readiness-assessment confirmed, ADRs unchanged
+- m4d ✓ service page at src/content/services/ai-readiness-assessment.md (founder methodology note TBD)
+- k1u ✓ /check shell at src/pages/check/index.astro (FAQPage JSON-LD placeholder, island comment)
+- ojq ✓ founders.md secondaryCta → "Check Your AI Readiness" + ctaPhase3Href: /check
+- g0g ✓ ctos.md secondaryCta → "Assess Your Team's AI Fluency" + ctaPhase3Href: /check
+- 2u2 ✓ stalled-ai-projects.md full rewrite: clarity-before-commitment framing, maturity spectrum
+- bhc ✓ .docs/canonical/assessments/ai-fluency-index-v1-spec.md (5 levels, 6 dims, gate scoring, brand naming)
+- qm5 ✓ src/lib/assessment/types.ts (all 24 types, C-21/C-22/C-25, TDD complete, 0 type errors)
+- 7pm ✓ src/lib/assessment/email-blocklist.ts (EMAIL_BLOCKLIST, isBlockedDomain, TDD complete)
+
+**10 tasks unblocked and ready (bd ready --label I02-AIASSESS):**
+- efj: P1-D-1 ServiceCards — BLOCKED by TDD guard (need failing test before editing ServiceCards.astro)
+- fgb: P2-A-2 5×6 threshold matrix (L — requires founder sign-off per UQ-12; draft OK to produce)
+- 7a3: P2-B-1 brand-usage-spec.md (S)
+- hcz: P2-B-2 gdpr-retention-erasure-spec.md (M)
+- 8w6: P2-B-3 aeo-query-map.md (M)
+- 3fk: P2-B-4 intake-questionnaire.md (L)
+- e1n: P3-A-3 /check walking skeleton island mount (S)
+- 2in: P3-A-4 GateScoringExplanationScreen.tsx (S, TDD)
+- n6q: P3-A-5 content-maps.ts static data (S)
+- efj: P1-D-1 ServiceCards — after TDD test written
+
+**Next immediate actions:**
+1. Write failing test for ServiceCards (check for AI Readiness Assessment link) — unblocks efj
+2. Dispatch parallel: 7a3 + hcz + 8w6 (P2-B docs) and e1n + 2in + n6q (P3-A code) simultaneously
+3. Dispatch fgb (P2-A-2 matrix draft — mark as DRAFT, flag for founder sign-off)
+4. Dispatch 3fk (P2-B-4 intake questionnaire — hardest P2 doc, L complexity)
+5. After P2-A-2 closes: P2-A-3 (transition roadmaps) unblocks
+
+**TDD guard note for efj:**
+Test file to write: `src/components/sections/ServiceCards.test.ts` (or equivalent)
+What to test: ServiceCards services array contains an entry with href '/services/ai-readiness-assessment'
+Framework: check package.json for vitest config
+
+**Key file locations:**
+- Plan: .docs/canonical/plans/plan-ai-readiness-assessment-I02-AIASSESS.md
+- Framework spec: .docs/canonical/assessments/ai-fluency-index-v1-spec.md
+- Types: src/lib/assessment/types.ts
+- Email blocklist: src/lib/assessment/email-blocklist.ts
+- Service page: src/content/services/ai-readiness-assessment.md
+- /check shell: src/pages/check/index.astro
+
+</details>
 
 ## Audit Log
 
