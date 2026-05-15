@@ -16,8 +16,9 @@ hero:
     label: 'Book a 30-Minute Advisory Call'
     href: '/contact'
   secondaryCta:
-    label: 'See How We Work'
-    href: '/services/fractional-cto'
+    label: 'Check Your AI Readiness'
+    href: '/contact'
+    ctaPhase3Href: '/check'
 
 painPoints:
   heading: 'Sound familiar?'

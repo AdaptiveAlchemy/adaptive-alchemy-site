@@ -16,8 +16,9 @@ hero:
     label: 'Book a Conversation'
     href: '/contact'
   secondaryCta:
-    label: 'See CTO Coaching'
-    href: '/services/cto-coaching'
+    label: 'Assess Your Team''s AI Fluency'
+    href: '/contact'
+    ctaPhase3Href: '/check'
 
 painPoints:
   heading: 'Two situations. One need.'

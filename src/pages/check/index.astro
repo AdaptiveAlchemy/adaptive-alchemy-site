@@ -1,0 +1,30 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro'
+
+const title = 'AI Readiness Check | Free Interactive Maturity Benchmarking Tool'
+const description =
+  "Take the free AI Readiness Check and get your team's maturity score across six dimensions of AI fluency. Discover your binding constraint and your next move in 5 minutes."
+---
+
+<PageLayout title={title} description={description}>
+  <script is:inline type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [] }
+  </script>
+
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="font-serif text-4xl text-text-primary md:text-5xl">
+        Free AI Readiness Check: Benchmark Your Team in 5 Minutes
+      </h1>
+
+      <p class="mt-6 text-lg leading-relaxed text-text-muted">
+        The AI Readiness Check is a free, five-minute assessment that scores
+        your team across six dimensions of AI fluency. Complete it to get your
+        maturity level (1&ndash;5), your binding constraint, and one concrete
+        next step &mdash; without booking a call or sharing your email.
+      </p>
+
+      {/* AssessmentIsland placeholder — wired in P3-E-2 */}
+    </div>
+  </section>
+</PageLayout>
