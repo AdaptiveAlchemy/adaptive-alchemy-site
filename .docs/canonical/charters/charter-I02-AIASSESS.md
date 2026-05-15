@@ -2,11 +2,11 @@
 title: AI Readiness Assessment — Initiative Plan
 initiative: I02-AIASSESS
 date: 2026-05-14
-status: needs-revision
+status: draft-hardened
 related-assessments:
   - assessments/offering-expansion-lower-market-2026-05-14.md
-panel_review: assessments/assessment-repo-charter-gate-panel-I02-AIASSESS-20260515.md
-auto_applied_count: 6
+panel_review: assessments/assessment-repo-charter-gate-panel-I02-AIASSESS-20260515b.md
+auto_applied_count: 12
 drafted_count: 0
 human_required_count: 0
 ---
@@ -44,12 +44,13 @@ Decision to make: new page vs. absorbing into existing `/services/technology-str
 Recommendation: **new page**. The Technology Strategy Assessment serves a different buyer (boards/investors evaluating portfolio companies). The AI Readiness Assessment is operational, not strategic — it's for teams, not boards. Keeping them separate protects the premium positioning of the Technology Strategy Assessment.
 
 New page structure:
-- What it is (fixed-scope, 2–3 week sprint, one team)
+- **H1: "AI Readiness Assessment"** (per UQ-13 dual-label strategy — "AI Readiness Assessment" is the primary SEO/product label for all H1, URL, and meta) [AA-11]
+- What it is (fixed-scope, 2–3 week sprint, one team). Conviction copy required (UQ-18): scope signal ("Typical engagement: 2–3 weeks, one team, covering 6 workflow dimensions and 3–5 stakeholder interviews"), risk-reduction signal ("Standalone engagement — no ongoing commitment required")
 - What you get (AI Readiness & Opportunity Map — maturity score, dimension breakdown, prioritized 90-day roadmap)
-- What it costs (~$8–15K — TBD after pricing validation)
+- What it costs: launch without price anchor (UQ-2). Primary CTA: "Book a 30-minute scoping call — we'll confirm fit before anything starts"
 - Who it's for (Track B: Practicing/Systematic, levels 3–4 — team has tried AI, results are inconsistent)
 - What comes next (natural path into Design → Pilot)
-- Explicit "not for" section (mirrors AdviceForge's honest framing — no, we don't introduce AI to teams that haven't started)
+- Explicit "not for" section
 
 ### 1.3 Add assessment CTA to relevant persona pages
 
@@ -171,6 +172,10 @@ Phase 2 must produce:
 - The threshold value for each dimension at each level (the 5×6 matrix)
 - The "binding constraint" identification logic — which failing dimension is the primary gate
 - Labels for each threshold band per dimension (e.g., STRONG / FUNCTIONAL / DEVELOPING / NOT YET) — the labels become the dimension scorecard in the report
+
+### 2.7a Commission benchmark micro-survey
+
+[AA-10] The benchmark data source (UQ-E: micro-survey of existing contacts) must be commissioned during Phase 2 to have any chance of being ready at Phase 3 launch. Phase 2 deliverable: design and send a micro-survey to the existing AA contact list covering the 6 dimensions and overall AI readiness level (10-15 questions, 5-minute completion time). Minimum response target: n ≥ 20 before Phase 3 launch. If n < 5 at Phase 3 launch, UQ-15 fallback applies (attributed third-party citations). Commissioning this in Phase 3 prep would likely miss the launch window.
 
 ### 2.7 Document the repeatable intake process
 
@@ -330,7 +335,7 @@ Implementation: SVG-based, drawn client-side. Recharts or D3 — no heavy librar
 **Proposed Default (2026-05-14):** Exclusion criteria for the `/services/ai-readiness-assessment` page:
 - Companies that have not yet deployed AI in any business process — this is a capability and workflow assessment, not an AI introduction
 - Teams seeking a software or vendor audit — this assesses team practice and workflow design, not technology selection
-- Organizations where no one has authority to act on the findings — the deliverable is a roadmap, and roadmaps require an owner [AA-6: reframed from "executive sponsorship required" — the tool is designed for practitioners who may not yet have sponsorship but will use the report to build it]
+- Organizations where no one is positioned to act on the findings — the deliverable is a roadmap, and roadmaps require an owner. If you're building the case for leadership buy-in, this is exactly what the assessment is designed to support. [AA-6/AA-12: clarified to distinguish structural inability-to-act from "doesn't yet have sponsorship" — the latter is the intended use case, not an exclusion]
 Tone: "This isn't the right fit for X" not "You're not ready for X."
 *Rationale: The charter lists this section as required but provides no content. Two panelists flagged it as high-risk without copy direction — "not for" language can either build trust (when specific) or alienate prospects (when dismissive).*
 
@@ -490,17 +495,18 @@ UQ-K selected option (c) — company email domain filtering. On a GitHub Pages s
 **Decision:** *Both client-side AND HubSpot capture filtering. Client-side: initial small blocklist (gmail.com, hotmail.com, yahoo.com, outlook.com, icloud.com, and major equivalents) validates on email field input. If matched, the form shows an inline error and blocks submission — user must enter a non-blocklisted email to proceed. The blocklist is version-controlled and expandable. HubSpot: additionally stores `company_email_domain` as a contact property and tags free-domain contacts at capture time for downstream routing. Both layers enforce the filter — client side for UX clarity, HubSpot side for data integrity.*
 
 Phase 3 ACs:
-- Email field validates against the blocklist before submission fires
-- Blocked domains show inline message: "Please use your work email — this assessment is designed for teams, not individuals"
+- Email field validates against blocklist before submission fires
+- v1 blocklist: gmail.com, hotmail.com, yahoo.com, outlook.com, icloud.com. Maintained as a version-controlled config array (not hard-coded inline). Additional domains added post-launch based on HubSpot filtering data. [AA-7]
+- Blocked domains show inline message: "Please use your work email — assessment results are designed to be shared with your team." [AA-7: reframed from "not for individuals" — the tool is individual-first but designed for team-sharing contexts]
 - `company_email_domain` stored as HubSpot contact property on every submission
-- Blocklist maintained as a version-controlled config array in the codebase (not hard-coded inline)
+- Completions are measured as work-email form submissions (emails passing the blocklist gate). A "filtered attempts" counter (completions that failed the email gate) is tracked separately via HubSpot. The 50-completions-in-60-days threshold (UQ-10) is evaluated against gate-passing submissions only. [AA-8]
 
 ---
 
 **UQ-12: Phase 1 and Phase 2 gate condition definitions**
 Both phase gates use "decisions locked" / "framework locked" but provide no testable acceptance criteria. An implementation team cannot determine when Phase 1 is complete without a judgment call.
 **Decision:**
-- **Phase 1 "locked" criteria (minimum):** (a) keyword research complete and assessment URL slug decided, (b) /services/ai-readiness-assessment page live with approved copy, (c) CTAs on /for/founders, /for/ctos, and /for/stalled-ai-projects pointing to the decided URL, (d) homepage engagement ladder updated, (e) founder sign-off on copy.
+- **Phase 1 "locked" criteria (minimum):** (a) keyword research complete and assessment URL slug decided, (b) /services/ai-readiness-assessment page live with approved copy, (c) CTAs on /for/founders, /for/ctos, and /for/stalled-ai-projects pointing to the decided URL, (d) homepage engagement ladder updated, (e) founder sign-off on copy, (f) methodology provenance note bracketed fields completed by founder (see UQ-14) — copy cannot be signed off until [N engagements] and [sectors] are filled in. [AA-9]
 - **Phase 2 "locked" criteria (minimum):** (a) 5×6 dimension-threshold matrix documented and reviewed, (b) all five transition roadmaps written, (c) intake questionnaire drafted with maturity-calibrated anchors, (d) routing logic thresholds defined numerically (what Dimension 6 score triggers Track C), (e) AEO/GEO prerequisites complete (UQ-16), (f) framework brand usage spec complete (UQ-17), (g) founder sign-off on framework.
 *Rationale: 3 panelists flagged that untestable gate conditions produce recurring negotiation instead of observable state changes.*
 
