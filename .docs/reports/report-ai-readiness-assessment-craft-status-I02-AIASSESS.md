@@ -46,8 +46,25 @@ phases:
     notes: "Charter pre-existing (draft-hardened). 43 BDD scenarios (46% edge), walking skeleton S09+S17-S27. 6 new constraints C-14..C-19 added."
   - phase: 2
     name: Design
-    status: in_progress
+    status: completed
     started_at: "2026-05-15T10:15:00Z"
+    completed_at: "2026-05-15T11:00:00Z"
+    human_decision: AUTO_APPROVE
+    panel_invoked: true
+    panel_artifact_path: ".docs/canonical/assessments/panel-phase2-gate-I02-AIASSESS-20260515.md"
+    agents: [architect, adr-writer, panel-facilitator]
+    artifacts:
+      - ".docs/canonical/backlogs/backlog-ai-readiness-assessment-I02-AIASSESS.md"
+      - ".docs/canonical/adrs/I02-001-astro-island-pattern.md"
+      - ".docs/canonical/adrs/I02-002-recharts-v3-radar-chart.md"
+      - ".docs/canonical/adrs/I02-003-hubspot-forms-v3-unauthenticated.md"
+      - ".docs/canonical/adrs/I02-004-gate-scoring-model.md"
+      - ".docs/canonical/adrs/I02-005-email-me-report-delivery.md"
+      - ".docs/canonical/adrs/I02-006-check-url-slug.md"
+      - ".docs/canonical/adrs/I02-007-two-label-framework-naming.md"
+      - ".docs/canonical/assessments/panel-phase2-gate-I02-AIASSESS-20260515.md"
+    commits: []
+    notes: "7 ADRs. C-20 (ADR I02-004 sequence corrected), C-21 (bindingConstraint nullable), C-22 (discriminated union), C-23 (n≥20 not launch gate), C-24 (GDPR stub discipline). Founder decision: company_email_domain KEPT per charter UQ-11."
   - phase: "2b"
     name: Slice Spec
     status: pending
@@ -56,7 +73,8 @@ phases:
     status: pending
   - phase: 3
     name: Plan
-    status: pending
+    status: in_progress
+    started_at: "2026-05-15T11:00:00Z"
   - phase: 4
     name: Build
     status: pending
@@ -107,3 +125,6 @@ Mode: auto
 
 - **2026-05-15T10:15:00Z** `AUTO_APPROVE` Phase 1 gate — ADVANCE WITH NOTES
   - Trigger: panel ADVANCE WITH NOTES (3 panelists unanimous), 43 BDD scenarios, 46% edge coverage  Detail: 6 new constraints C-14..C-19 (Astro interface contract, GDPR unsubscribe, data retention spec)  Resolution: advancing to Phase 2 (Design)
+
+- **2026-05-15T11:00:00Z** `AUTO_APPROVE` Phase 2 gate — ADVANCE WITH NOTES
+  - Trigger: panel ADVANCE WITH NOTES (3 panelists unanimous), 7 ADRs, backlog wave structure B00-B06  Detail: C-20 ADR sequence corrected; C-21/C-22 type fixes; C-23 benchmark gate removed; C-24 GDPR stub discipline; company_email_domain KEPT per UQ-11  Resolution: advancing to Phase 3 (Plan)
